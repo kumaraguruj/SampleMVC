@@ -1,0 +1,47 @@
+﻿@using WebApplication3.ViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //WebApplication3.Models.Employee emp = (WebApplication3.Models.Employee)ViewBag.Employee;
+
+    @model EmployeeListViewModel
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+</head>
+<body>
+    <div>
+
+        Hello @Model.UserName
+        <hr />
+        <div>
+            <table>
+                <tr>
+                    <th>
+                        Employee Name
+                    </th>
+                    <th>
+                        Salary
+                    </th>
+                </tr>
+                @foreach (EmployeeViewModel emp in Model.Employees)
+                {
+                    <tr>
+                        <td>@emp.EmployeeName</td>
+                        <td style="background-color:@emp.SalaryColor">@emp.Salary</td>
+                    </tr>
+                }
+            </table>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

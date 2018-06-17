@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{815784A2-5A99-4E95-874F-D852C41270AD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication3</RootNamespace>
+    <AssemblyName>WebApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AMS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AMS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AMS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AMS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AMS.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Applications.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Membership.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Membership_GetPasswordWithFormat_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Membership_GetPassword_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Membership_GetUserByName_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Membership_GetUserByUserId_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Paths.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_PersonalizationAllUsers.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_PersonalizationPerUser.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Profile.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Profile_GetProperties_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Roles.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_SchemaVersions.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_Users.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_UsersInRoles_RemoveUsersFromRoles_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aspnet_WebEvent_Events.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BUGroupMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BUMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CategoryMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\compback.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CompMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Datum.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DepartmentMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DesignationMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DivisionMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dtproperty.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dt_getpropertiesbyid_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dt_getpropertiesbyid_u_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\duptest.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EmailMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\empbak020215.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\EmployeeBusinessLayer.cs" />
+    <Compile Include="Models\Employeeeeee.cs" />
+    <Compile Include="Models\EmployeeMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EmployeeRemark.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EMPNEW.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GetOtherUsers_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HodMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\holidayback.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HolidayMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LeaveBalance.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LeaveBalance1.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\leavebalanceback.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LeaveBalanceTable.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LeaveBalanceTable1.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LeaveBalanceTable2.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LeaveTypeMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LocationMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LockMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\lvbalancebackup050713.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MainLeaveBalanceTable.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewSelectCommand_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OHolidayMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Schedule.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ScheduleMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ScheduleMastertemp.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SetMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShiftMaster.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocBUGroupSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocBUGroupSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocBUSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocBUSelectReportList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocBUSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocCategorySelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sproccategorySelectReportList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocCategorySelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocCompanySelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocCompanySelectReportList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocCompanySelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocCompoffSelectEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocCompoffSelectHodlist_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocCompoffSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocDepartmentSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocDepartmentSelectReportList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocDepartmentSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocDesignationSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocDesignationSelectReportList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocDesignationSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocDivisionSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocDivisionSelectReportList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocDivisionSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEarlySelectEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEarlySelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmailSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmailSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmployeeRemarksSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmployeeSelectBalnkemailList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmployeeSelectBulkUserListemp_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmployeeSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmployeeSelectReportListemp_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmployeeSelectReportList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmployeeSelectSingleidItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmployeeSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmployeeSelectTeamListemp_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocEmployeeSelecttReportManagerListemp_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocHodSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocHodSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocHolidaySelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocHolidaySelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLateSelectEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLateSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLeaveApplicationSelectEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLeaveApplicationSelectHodlist_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLeaveApplicationSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLeaveBalanceView_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLeaveTypeSelectListNew_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLeaveTypeSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLeaveTypeSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLocationSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLocationSelectReportList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLocationSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLockMasterSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLockMasterSelectSingleidItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocLockMasterSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocManualPunchesSelectEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocManualPunchesSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocManualScheduleSelectEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocManualScheduleSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocOHolidaySelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocOHolidaySelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocOnsiteSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocOptionalHolidaySelectEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocOptionalHolidaySelectHodlist_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocOptionalHolidaySelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocOvertimeSelectEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocOvertimeSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocProcessEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocScheduleSelectEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocScheduleSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocSetMasterSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocSetMasterSelectSingleidItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocSetMasterSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocShiftSelectItemLocation_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocShiftSelectList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocShiftSelectSingleidItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocShiftSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocWorkfromHomeSelectEmployeeList_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocWorkfromHomeSelectHodlist_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sprocWorkfromHomeSelectSingleItem_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Srlno.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TblIp.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\templv.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TEMPPrvSchedule.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tempsch.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TEMPSchedule.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tmpUser.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vw_aspnet_Applications.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vw_aspnet_MembershipUsers.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vw_aspnet_Profiles.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vw_aspnet_Roles.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vw_aspnet_Users.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vw_aspnet_UsersInRoles.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vw_aspnet_WebPartState_Paths.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vw_aspnet_WebPartState_Shared.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vw_aspnet_WebPartState_User.cs">
+      <DependentUpon>AMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\EmployeeViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Models\AMS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AMS.edmx</DependentUpon>
+      <LastGenOutput>AMS.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\AMS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AMS.edmx</DependentUpon>
+      <LastGenOutput>AMS.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\AMS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AMS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\AMS.edmx.diagram">
+      <DependentUpon>AMS.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Test\MyView.cshtml" />
+    <Content Include="Views\Test\GetView.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3110</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3110/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

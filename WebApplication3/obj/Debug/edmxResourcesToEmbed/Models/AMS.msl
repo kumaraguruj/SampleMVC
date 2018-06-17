@@ -1,0 +1,2584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebAttn_apModelStoreContainer" CdmEntityContainer="WebAttn_apEntities">
+    <EntitySetMapping Name="aspnet_Applications">
+      <EntityTypeMapping TypeName="WebAttn_apModel.aspnet_Applications">
+        <MappingFragment StoreEntitySet="aspnet_Applications">
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Membership">
+      <EntityTypeMapping TypeName="WebAttn_apModel.aspnet_Membership">
+        <MappingFragment StoreEntitySet="aspnet_Membership">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Paths">
+      <EntityTypeMapping TypeName="WebAttn_apModel.aspnet_Paths">
+        <MappingFragment StoreEntitySet="aspnet_Paths">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationAllUsers">
+      <EntityTypeMapping TypeName="WebAttn_apModel.aspnet_PersonalizationAllUsers">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationPerUser">
+      <EntityTypeMapping TypeName="WebAttn_apModel.aspnet_PersonalizationPerUser">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Profile">
+      <EntityTypeMapping TypeName="WebAttn_apModel.aspnet_Profile">
+        <MappingFragment StoreEntitySet="aspnet_Profile">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+          <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+          <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Roles">
+      <EntityTypeMapping TypeName="WebAttn_apModel.aspnet_Roles">
+        <MappingFragment StoreEntitySet="aspnet_Roles">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_SchemaVersions">
+      <EntityTypeMapping TypeName="WebAttn_apModel.aspnet_SchemaVersions">
+        <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+          <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+          <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Users">
+      <EntityTypeMapping TypeName="WebAttn_apModel.aspnet_Users">
+        <MappingFragment StoreEntitySet="aspnet_Users">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_WebEvent_Events">
+      <EntityTypeMapping TypeName="WebAttn_apModel.aspnet_WebEvent_Events">
+        <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+          <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+          <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+          <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+          <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+          <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+          <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+          <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BUMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.BUMaster">
+        <MappingFragment StoreEntitySet="BUMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cBUCode" ColumnName="cBUCode" />
+          <ScalarProperty Name="cBUDesc" ColumnName="cBUDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.CategoryMaster">
+        <MappingFragment StoreEntitySet="CategoryMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cCategoryCode" ColumnName="cCategoryCode" />
+          <ScalarProperty Name="cCategoryDesc" ColumnName="cCategoryDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.CompMaster">
+        <MappingFragment StoreEntitySet="CompMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cCompCode" ColumnName="cCompCode" />
+          <ScalarProperty Name="cCompName" ColumnName="cCompName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Data">
+      <EntityTypeMapping TypeName="WebAttn_apModel.Datum">
+        <MappingFragment StoreEntitySet="Data">
+          <ScalarProperty Name="cMcData" ColumnName="cMcData" />
+          <ScalarProperty Name="cAttendanceCode" ColumnName="cAttendanceCode" />
+          <ScalarProperty Name="cFlag" ColumnName="cFlag" />
+          <ScalarProperty Name="nTmmn" ColumnName="nTmmn" />
+          <ScalarProperty Name="cTmhh" ColumnName="cTmhh" />
+          <ScalarProperty Name="cMcNo" ColumnName="cMcNo" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepartmentMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.DepartmentMaster">
+        <MappingFragment StoreEntitySet="DepartmentMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cDepartmentCode" ColumnName="cDepartmentCode" />
+          <ScalarProperty Name="cDepartmentDesc" ColumnName="cDepartmentDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DesignationMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.DesignationMaster">
+        <MappingFragment StoreEntitySet="DesignationMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cDesignationCode" ColumnName="cDesignationCode" />
+          <ScalarProperty Name="cDesignationDesc" ColumnName="cDesignationDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DivisionMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.DivisionMaster">
+        <MappingFragment StoreEntitySet="DivisionMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cDivisionCode" ColumnName="cDivisionCode" />
+          <ScalarProperty Name="cDivisionDesc" ColumnName="cDivisionDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dtproperties">
+      <EntityTypeMapping TypeName="WebAttn_apModel.dtproperty">
+        <MappingFragment StoreEntitySet="dtproperties">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="objectid" ColumnName="objectid" />
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="uvalue" ColumnName="uvalue" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+          <ScalarProperty Name="version" ColumnName="version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.EmployeeMaster">
+        <MappingFragment StoreEntitySet="EmployeeMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cPresentAddress" ColumnName="cPresentAddress" />
+          <ScalarProperty Name="cPermanantAddress" ColumnName="cPermanantAddress" />
+          <ScalarProperty Name="cMobileNo" ColumnName="cMobileNo" />
+          <ScalarProperty Name="cContactPerson" ColumnName="cContactPerson" />
+          <ScalarProperty Name="cContactMobileNo" ColumnName="cContactMobileNo" />
+          <ScalarProperty Name="cFatherspouceName" ColumnName="cFatherspouceName" />
+          <ScalarProperty Name="cNationality" ColumnName="cNationality" />
+          <ScalarProperty Name="dtDOB" ColumnName="dtDOB" />
+          <ScalarProperty Name="dtDOJ" ColumnName="dtDOJ" />
+          <ScalarProperty Name="dtDOL" ColumnName="dtDOL" />
+          <ScalarProperty Name="cSex" ColumnName="cSex" />
+          <ScalarProperty Name="cJobStatus" ColumnName="cJobStatus" />
+          <ScalarProperty Name="cShift1" ColumnName="cShift1" />
+          <ScalarProperty Name="cShift2" ColumnName="cShift2" />
+          <ScalarProperty Name="cShift3" ColumnName="cShift3" />
+          <ScalarProperty Name="nDays" ColumnName="nDays" />
+          <ScalarProperty Name="dtBaseDate" ColumnName="dtBaseDate" />
+          <ScalarProperty Name="cFlexible" ColumnName="cFlexible" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="cOT" ColumnName="cOT" />
+          <ScalarProperty Name="cLateWOPH" ColumnName="cLateWOPH" />
+          <ScalarProperty Name="cEarlyWOPH" ColumnName="cEarlyWOPH" />
+          <ScalarProperty Name="cOTWOPH" ColumnName="cOTWOPH" />
+          <ScalarProperty Name="cCompCode" ColumnName="cCompCode" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cDepartmentCode" ColumnName="cDepartmentCode" />
+          <ScalarProperty Name="cCategoryCode" ColumnName="cCategoryCode" />
+          <ScalarProperty Name="cDivisionCode" ColumnName="cDivisionCode" />
+          <ScalarProperty Name="cDesignationCode" ColumnName="cDesignationCode" />
+          <ScalarProperty Name="cOdd" ColumnName="cOdd" />
+          <ScalarProperty Name="cMin" ColumnName="cMin" />
+          <ScalarProperty Name="cMax" ColumnName="cMax" />
+          <ScalarProperty Name="nMaxTime" ColumnName="nMaxTime" />
+          <ScalarProperty Name="cFullDay" ColumnName="cFullDay" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="nOffDay1" ColumnName="nOffDay1" />
+          <ScalarProperty Name="nOffDay2" ColumnName="nOffDay2" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="cHod" ColumnName="cHod" />
+          <ScalarProperty Name="cHod1" ColumnName="cHod1" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+          <ScalarProperty Name="nOffDay3" ColumnName="nOffDay3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HodMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.HodMaster">
+        <MappingFragment StoreEntitySet="HodMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cHodCode" ColumnName="cHodCode" />
+          <ScalarProperty Name="cHodDesc" ColumnName="cHodDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveTypeMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.LeaveTypeMaster">
+        <MappingFragment StoreEntitySet="LeaveTypeMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cLeaveTypeCode" ColumnName="cLeaveTypeCode" />
+          <ScalarProperty Name="cLeaveTypeDesc" ColumnName="cLeaveTypeDesc" />
+          <ScalarProperty Name="cPaid" ColumnName="cPaid" />
+          <ScalarProperty Name="cCarry" ColumnName="cCarry" />
+          <ScalarProperty Name="cCredit" ColumnName="cCredit" />
+          <ScalarProperty Name="cCategory" ColumnName="cCategory" />
+          <ScalarProperty Name="nOrder" ColumnName="nOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocationMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.LocationMaster">
+        <MappingFragment StoreEntitySet="LocationMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cLocationDesc" ColumnName="cLocationDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedules">
+      <EntityTypeMapping TypeName="WebAttn_apModel.Schedule">
+        <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cTimeIn" ColumnName="cTimeIn" />
+          <ScalarProperty Name="nTimeIn" ColumnName="nTimeIn" />
+          <ScalarProperty Name="cTimeOut" ColumnName="cTimeOut" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="cLunchFrom" ColumnName="cLunchFrom" />
+          <ScalarProperty Name="nLunchFrom" ColumnName="nLunchFrom" />
+          <ScalarProperty Name="cLunchTo" ColumnName="cLunchTo" />
+          <ScalarProperty Name="nLunchTo" ColumnName="nLunchTo" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="nLate" ColumnName="nLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="nEarly" ColumnName="nEarly" />
+          <ScalarProperty Name="cOverTime" ColumnName="cOverTime" />
+          <ScalarProperty Name="nOverTime" ColumnName="nOverTime" />
+          <ScalarProperty Name="cTotalHrs" ColumnName="cTotalHrs" />
+          <ScalarProperty Name="nTotalHrs" ColumnName="nTotalHrs" />
+          <ScalarProperty Name="cLateAuth" ColumnName="cLateAuth" />
+          <ScalarProperty Name="cEarlyAuth" ColumnName="cEarlyAuth" />
+          <ScalarProperty Name="cOverTimeAuth" ColumnName="cOverTimeAuth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShiftMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.ShiftMaster">
+        <MappingFragment StoreEntitySet="ShiftMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cShiftDesc" ColumnName="cShiftDesc" />
+          <ScalarProperty Name="cTotalHrs" ColumnName="cTotalHrs" />
+          <ScalarProperty Name="cTotalSwipe" ColumnName="cTotalSwipe" />
+          <ScalarProperty Name="cTotalFixed" ColumnName="cTotalFixed" />
+          <ScalarProperty Name="cTotalFixedValue" ColumnName="cTotalFixedValue" />
+          <ScalarProperty Name="cTotalLHrs" ColumnName="cTotalLHrs" />
+          <ScalarProperty Name="cTotalLSwipe" ColumnName="cTotalLSwipe" />
+          <ScalarProperty Name="cTotalLFixed" ColumnName="cTotalLFixed" />
+          <ScalarProperty Name="cTotalLFixedValue" ColumnName="cTotalLFixedValue" />
+          <ScalarProperty Name="nShiftStart" ColumnName="nShiftStart" />
+          <ScalarProperty Name="nShiftEnd" ColumnName="nShiftEnd" />
+          <ScalarProperty Name="nLunchStart" ColumnName="nLunchStart" />
+          <ScalarProperty Name="nLunchEnd" ColumnName="nLunchEnd" />
+          <ScalarProperty Name="nGraceIn" ColumnName="nGraceIn" />
+          <ScalarProperty Name="nGraceOut" ColumnName="nGraceOut" />
+          <ScalarProperty Name="nBefore" ColumnName="nBefore" />
+          <ScalarProperty Name="nAfter" ColumnName="nAfter" />
+          <ScalarProperty Name="nOTBefore" ColumnName="nOTBefore" />
+          <ScalarProperty Name="nOTAfter" ColumnName="nOTAfter" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Srlnoes">
+      <EntityTypeMapping TypeName="WebAttn_apModel.Srlno">
+        <MappingFragment StoreEntitySet="Srlno">
+          <ScalarProperty Name="cSrlNo" ColumnName="cSrlNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="WebAttn_apModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblIps">
+      <EntityTypeMapping TypeName="WebAttn_apModel.TblIp">
+        <MappingFragment StoreEntitySet="TblIp">
+          <ScalarProperty Name="IPAdd" ColumnName="IPAdd" />
+          <ScalarProperty Name="Mac1" ColumnName="Mac1" />
+          <ScalarProperty Name="Mac2" ColumnName="Mac2" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="McName" ColumnName="McName" />
+          <ScalarProperty Name="cLocationcode" ColumnName="cLocationcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BUGroupMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.BUGroupMaster">
+        <MappingFragment StoreEntitySet="BUGroupMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cBUGroupCode" ColumnName="cBUGroupCode" />
+          <ScalarProperty Name="cBUCode" ColumnName="cBUCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="compbacks">
+      <EntityTypeMapping TypeName="WebAttn_apModel.compback">
+        <MappingFragment StoreEntitySet="compback">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cCompCode" ColumnName="cCompCode" />
+          <ScalarProperty Name="cCompName" ColumnName="cCompName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="duptests">
+      <EntityTypeMapping TypeName="WebAttn_apModel.duptest">
+        <MappingFragment StoreEntitySet="duptest">
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cTimeIn" ColumnName="cTimeIn" />
+          <ScalarProperty Name="nTimeIn" ColumnName="nTimeIn" />
+          <ScalarProperty Name="cTimeOut" ColumnName="cTimeOut" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="cLunchFrom" ColumnName="cLunchFrom" />
+          <ScalarProperty Name="nLunchFrom" ColumnName="nLunchFrom" />
+          <ScalarProperty Name="cLunchTo" ColumnName="cLunchTo" />
+          <ScalarProperty Name="nLunchTo" ColumnName="nLunchTo" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="nLate" ColumnName="nLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="nEarly" ColumnName="nEarly" />
+          <ScalarProperty Name="cOverTime" ColumnName="cOverTime" />
+          <ScalarProperty Name="nOverTime" ColumnName="nOverTime" />
+          <ScalarProperty Name="cTotalHrs" ColumnName="cTotalHrs" />
+          <ScalarProperty Name="nTotalHrs" ColumnName="nTotalHrs" />
+          <ScalarProperty Name="cLateAuth" ColumnName="cLateAuth" />
+          <ScalarProperty Name="cEarlyAuth" ColumnName="cEarlyAuth" />
+          <ScalarProperty Name="cOverTimeAuth" ColumnName="cOverTimeAuth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.EmailMaster">
+        <MappingFragment StoreEntitySet="EmailMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cHodCode" ColumnName="cHodCode" />
+          <ScalarProperty Name="cEmailDesc" ColumnName="cEmailDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="empbak020215">
+      <EntityTypeMapping TypeName="WebAttn_apModel.empbak020215">
+        <MappingFragment StoreEntitySet="empbak020215">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cPresentAddress" ColumnName="cPresentAddress" />
+          <ScalarProperty Name="cPermanantAddress" ColumnName="cPermanantAddress" />
+          <ScalarProperty Name="cMobileNo" ColumnName="cMobileNo" />
+          <ScalarProperty Name="cContactPerson" ColumnName="cContactPerson" />
+          <ScalarProperty Name="cContactMobileNo" ColumnName="cContactMobileNo" />
+          <ScalarProperty Name="cFatherspouceName" ColumnName="cFatherspouceName" />
+          <ScalarProperty Name="cNationality" ColumnName="cNationality" />
+          <ScalarProperty Name="dtDOB" ColumnName="dtDOB" />
+          <ScalarProperty Name="dtDOJ" ColumnName="dtDOJ" />
+          <ScalarProperty Name="dtDOL" ColumnName="dtDOL" />
+          <ScalarProperty Name="cSex" ColumnName="cSex" />
+          <ScalarProperty Name="cJobStatus" ColumnName="cJobStatus" />
+          <ScalarProperty Name="cShift1" ColumnName="cShift1" />
+          <ScalarProperty Name="cShift2" ColumnName="cShift2" />
+          <ScalarProperty Name="cShift3" ColumnName="cShift3" />
+          <ScalarProperty Name="nDays" ColumnName="nDays" />
+          <ScalarProperty Name="dtBaseDate" ColumnName="dtBaseDate" />
+          <ScalarProperty Name="cFlexible" ColumnName="cFlexible" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="cOT" ColumnName="cOT" />
+          <ScalarProperty Name="cLateWOPH" ColumnName="cLateWOPH" />
+          <ScalarProperty Name="cEarlyWOPH" ColumnName="cEarlyWOPH" />
+          <ScalarProperty Name="cOTWOPH" ColumnName="cOTWOPH" />
+          <ScalarProperty Name="cCompCode" ColumnName="cCompCode" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cDepartmentCode" ColumnName="cDepartmentCode" />
+          <ScalarProperty Name="cCategoryCode" ColumnName="cCategoryCode" />
+          <ScalarProperty Name="cDivisionCode" ColumnName="cDivisionCode" />
+          <ScalarProperty Name="cDesignationCode" ColumnName="cDesignationCode" />
+          <ScalarProperty Name="cOdd" ColumnName="cOdd" />
+          <ScalarProperty Name="cMin" ColumnName="cMin" />
+          <ScalarProperty Name="cMax" ColumnName="cMax" />
+          <ScalarProperty Name="nMaxTime" ColumnName="nMaxTime" />
+          <ScalarProperty Name="cFullDay" ColumnName="cFullDay" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="nOffDay1" ColumnName="nOffDay1" />
+          <ScalarProperty Name="nOffDay2" ColumnName="nOffDay2" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="cHod" ColumnName="cHod" />
+          <ScalarProperty Name="cHod1" ColumnName="cHod1" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeRemarks">
+      <EntityTypeMapping TypeName="WebAttn_apModel.EmployeeRemark">
+        <MappingFragment StoreEntitySet="EmployeeRemarks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cRemarks" ColumnName="cRemarks" />
+          <ScalarProperty Name="cUserName" ColumnName="cUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPNEWs">
+      <EntityTypeMapping TypeName="WebAttn_apModel.EMPNEW">
+        <MappingFragment StoreEntitySet="EMPNEW">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cPresentAddress" ColumnName="cPresentAddress" />
+          <ScalarProperty Name="cPermanantAddress" ColumnName="cPermanantAddress" />
+          <ScalarProperty Name="cContactPerson" ColumnName="cContactPerson" />
+          <ScalarProperty Name="cFatherspouceName" ColumnName="cFatherspouceName" />
+          <ScalarProperty Name="cNationality" ColumnName="cNationality" />
+          <ScalarProperty Name="dtDOB" ColumnName="dtDOB" />
+          <ScalarProperty Name="dtDOJ" ColumnName="dtDOJ" />
+          <ScalarProperty Name="dtDOL" ColumnName="dtDOL" />
+          <ScalarProperty Name="cSex" ColumnName="cSex" />
+          <ScalarProperty Name="cJobStatus" ColumnName="cJobStatus" />
+          <ScalarProperty Name="cShift1" ColumnName="cShift1" />
+          <ScalarProperty Name="cShift2" ColumnName="cShift2" />
+          <ScalarProperty Name="cShift3" ColumnName="cShift3" />
+          <ScalarProperty Name="nDays" ColumnName="nDays" />
+          <ScalarProperty Name="dtBaseDate" ColumnName="dtBaseDate" />
+          <ScalarProperty Name="cFlexible" ColumnName="cFlexible" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="cOT" ColumnName="cOT" />
+          <ScalarProperty Name="cLateWOPH" ColumnName="cLateWOPH" />
+          <ScalarProperty Name="cEarlyWOPH" ColumnName="cEarlyWOPH" />
+          <ScalarProperty Name="cOTWOPH" ColumnName="cOTWOPH" />
+          <ScalarProperty Name="cCompCode" ColumnName="cCompCode" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cDepartmentCode" ColumnName="cDepartmentCode" />
+          <ScalarProperty Name="cCategoryCode" ColumnName="cCategoryCode" />
+          <ScalarProperty Name="cDivisionCode" ColumnName="cDivisionCode" />
+          <ScalarProperty Name="cDesignationCode" ColumnName="cDesignationCode" />
+          <ScalarProperty Name="cOdd" ColumnName="cOdd" />
+          <ScalarProperty Name="cMin" ColumnName="cMin" />
+          <ScalarProperty Name="cMax" ColumnName="cMax" />
+          <ScalarProperty Name="nMaxTime" ColumnName="nMaxTime" />
+          <ScalarProperty Name="cFullDay" ColumnName="cFullDay" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="nOffDay1" ColumnName="nOffDay1" />
+          <ScalarProperty Name="nOffDay2" ColumnName="nOffDay2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="holidaybacks">
+      <EntityTypeMapping TypeName="WebAttn_apModel.holidayback">
+        <MappingFragment StoreEntitySet="holidayback">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cHolidayCode" ColumnName="cHolidayCode" />
+          <ScalarProperty Name="cHolidayDesc" ColumnName="cHolidayDesc" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cStatusCode" ColumnName="cStatusCode" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cBUCode" ColumnName="cBUCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HolidayMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.HolidayMaster">
+        <MappingFragment StoreEntitySet="HolidayMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cHolidayCode" ColumnName="cHolidayCode" />
+          <ScalarProperty Name="cHolidayDesc" ColumnName="cHolidayDesc" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cStatusCode" ColumnName="cStatusCode" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cBUCode" ColumnName="cBUCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveBalances">
+      <EntityTypeMapping TypeName="WebAttn_apModel.LeaveBalance">
+        <MappingFragment StoreEntitySet="LeaveBalance">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cYear" ColumnName="cYear" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="PL_OP" ColumnName="PL_OP" />
+          <ScalarProperty Name="PL_CR" ColumnName="PL_CR" />
+          <ScalarProperty Name="AL_CR" ColumnName="AL_CR" />
+          <ScalarProperty Name="AL_OP" ColumnName="AL_OP" />
+          <ScalarProperty Name="BT_CR" ColumnName="BT_CR" />
+          <ScalarProperty Name="PAT_CR" ColumnName="PAT_CR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveBalance1">
+      <EntityTypeMapping TypeName="WebAttn_apModel.LeaveBalance1">
+        <MappingFragment StoreEntitySet="LeaveBalance1">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cYear" ColumnName="cYear" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="PTO_CR" ColumnName="PTO_CR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="leavebalancebacks">
+      <EntityTypeMapping TypeName="WebAttn_apModel.leavebalanceback">
+        <MappingFragment StoreEntitySet="leavebalanceback">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cYear" ColumnName="cYear" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="PL_OP" ColumnName="PL_OP" />
+          <ScalarProperty Name="PL_CR" ColumnName="PL_CR" />
+          <ScalarProperty Name="AL_CR" ColumnName="AL_CR" />
+          <ScalarProperty Name="AL_OP" ColumnName="AL_OP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveBalanceTables">
+      <EntityTypeMapping TypeName="WebAttn_apModel.LeaveBalanceTable">
+        <MappingFragment StoreEntitySet="LeaveBalanceTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cYear" ColumnName="cYear" />
+          <ScalarProperty Name="PL_OpeningBalance" ColumnName="PL_OpeningBalance" />
+          <ScalarProperty Name="PL_Credit" ColumnName="PL_Credit" />
+          <ScalarProperty Name="AL_Credit" ColumnName="AL_Credit" />
+          <ScalarProperty Name="AL_OpeningBalance" ColumnName="AL_OpeningBalance" />
+          <ScalarProperty Name="BT_Credit" ColumnName="BT_Credit" />
+          <ScalarProperty Name="PAT_Credit" ColumnName="PAT_Credit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveBalanceTable1">
+      <EntityTypeMapping TypeName="WebAttn_apModel.LeaveBalanceTable1">
+        <MappingFragment StoreEntitySet="LeaveBalanceTable1">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cYear" ColumnName="cYear" />
+          <ScalarProperty Name="PTO_Credit" ColumnName="PTO_Credit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LockMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.LockMaster">
+        <MappingFragment StoreEntitySet="LockMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cYYMM" ColumnName="cYYMM" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="cLock" ColumnName="cLock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lvbalancebackup050713">
+      <EntityTypeMapping TypeName="WebAttn_apModel.lvbalancebackup050713">
+        <MappingFragment StoreEntitySet="lvbalancebackup050713">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cYear" ColumnName="cYear" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="PL_OP" ColumnName="PL_OP" />
+          <ScalarProperty Name="PL_CR" ColumnName="PL_CR" />
+          <ScalarProperty Name="AL_CR" ColumnName="AL_CR" />
+          <ScalarProperty Name="AL_OP" ColumnName="AL_OP" />
+          <ScalarProperty Name="BT_CR" ColumnName="BT_CR" />
+          <ScalarProperty Name="PAT_CR" ColumnName="PAT_CR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainLeaveBalanceTables">
+      <EntityTypeMapping TypeName="WebAttn_apModel.MainLeaveBalanceTable">
+        <MappingFragment StoreEntitySet="MainLeaveBalanceTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cYear" ColumnName="cYear" />
+          <ScalarProperty Name="PL_OpeningBalance" ColumnName="PL_OpeningBalance" />
+          <ScalarProperty Name="PL_Credit" ColumnName="PL_Credit" />
+          <ScalarProperty Name="AL_Credit" ColumnName="AL_Credit" />
+          <ScalarProperty Name="AL_OpeningBalance" ColumnName="AL_OpeningBalance" />
+          <ScalarProperty Name="BT_Credit" ColumnName="BT_Credit" />
+          <ScalarProperty Name="PAT_Credit" ColumnName="PAT_Credit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OHolidayMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.OHolidayMaster">
+        <MappingFragment StoreEntitySet="OHolidayMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cHolidayCode" ColumnName="cHolidayCode" />
+          <ScalarProperty Name="cHolidayDesc" ColumnName="cHolidayDesc" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cStatusCode" ColumnName="cStatusCode" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cBUCode" ColumnName="cBUCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduleMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.ScheduleMaster">
+        <MappingFragment StoreEntitySet="ScheduleMaster">
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduleMastertemps">
+      <EntityTypeMapping TypeName="WebAttn_apModel.ScheduleMastertemp">
+        <MappingFragment StoreEntitySet="ScheduleMastertemp">
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SetMasters">
+      <EntityTypeMapping TypeName="WebAttn_apModel.SetMaster">
+        <MappingFragment StoreEntitySet="SetMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="cActive" ColumnName="cActive" />
+          <ScalarProperty Name="nFullDay" ColumnName="nFullDay" />
+          <ScalarProperty Name="nHalfDay" ColumnName="nHalfDay" />
+          <ScalarProperty Name="nAbsent" ColumnName="nAbsent" />
+          <ScalarProperty Name="cWeekoffCode" ColumnName="cWeekoffCode" />
+          <ScalarProperty Name="nLeaveEligible" ColumnName="nLeaveEligible" />
+          <ScalarProperty Name="nLeaveGrace" ColumnName="nLeaveGrace" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="templvs">
+      <EntityTypeMapping TypeName="WebAttn_apModel.templv">
+        <MappingFragment StoreEntitySet="templv">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cLeavetypecode" ColumnName="cLeavetypecode" />
+          <ScalarProperty Name="cCarry" ColumnName="cCarry" />
+          <ScalarProperty Name="cCredit" ColumnName="cCredit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEMPPrvSchedules">
+      <EntityTypeMapping TypeName="WebAttn_apModel.TEMPPrvSchedule">
+        <MappingFragment StoreEntitySet="TEMPPrvSchedule">
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cTimeIn" ColumnName="cTimeIn" />
+          <ScalarProperty Name="nTimeIn" ColumnName="nTimeIn" />
+          <ScalarProperty Name="cTimeOut" ColumnName="cTimeOut" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="cLunchFrom" ColumnName="cLunchFrom" />
+          <ScalarProperty Name="nLunchFrom" ColumnName="nLunchFrom" />
+          <ScalarProperty Name="cLunchTo" ColumnName="cLunchTo" />
+          <ScalarProperty Name="nLunchTo" ColumnName="nLunchTo" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="nLate" ColumnName="nLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="nEarly" ColumnName="nEarly" />
+          <ScalarProperty Name="cOverTime" ColumnName="cOverTime" />
+          <ScalarProperty Name="nOverTime" ColumnName="nOverTime" />
+          <ScalarProperty Name="cTotalHrs" ColumnName="cTotalHrs" />
+          <ScalarProperty Name="nTotalHrs" ColumnName="nTotalHrs" />
+          <ScalarProperty Name="cLateAuth" ColumnName="cLateAuth" />
+          <ScalarProperty Name="cEarlyAuth" ColumnName="cEarlyAuth" />
+          <ScalarProperty Name="cOverTimeAuth" ColumnName="cOverTimeAuth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tempsches">
+      <EntityTypeMapping TypeName="WebAttn_apModel.tempsch">
+        <MappingFragment StoreEntitySet="tempsch">
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cTimeIn" ColumnName="cTimeIn" />
+          <ScalarProperty Name="nTimeIn" ColumnName="nTimeIn" />
+          <ScalarProperty Name="cTimeOut" ColumnName="cTimeOut" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="cLunchFrom" ColumnName="cLunchFrom" />
+          <ScalarProperty Name="nLunchFrom" ColumnName="nLunchFrom" />
+          <ScalarProperty Name="cLunchTo" ColumnName="cLunchTo" />
+          <ScalarProperty Name="nLunchTo" ColumnName="nLunchTo" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="nLate" ColumnName="nLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="nEarly" ColumnName="nEarly" />
+          <ScalarProperty Name="cOverTime" ColumnName="cOverTime" />
+          <ScalarProperty Name="nOverTime" ColumnName="nOverTime" />
+          <ScalarProperty Name="cTotalHrs" ColumnName="cTotalHrs" />
+          <ScalarProperty Name="nTotalHrs" ColumnName="nTotalHrs" />
+          <ScalarProperty Name="cLateAuth" ColumnName="cLateAuth" />
+          <ScalarProperty Name="cEarlyAuth" ColumnName="cEarlyAuth" />
+          <ScalarProperty Name="cOverTimeAuth" ColumnName="cOverTimeAuth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEMPSchedules">
+      <EntityTypeMapping TypeName="WebAttn_apModel.TEMPSchedule">
+        <MappingFragment StoreEntitySet="TEMPSchedule">
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cTimeIn" ColumnName="cTimeIn" />
+          <ScalarProperty Name="nTimeIn" ColumnName="nTimeIn" />
+          <ScalarProperty Name="cTimeOut" ColumnName="cTimeOut" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="cLunchFrom" ColumnName="cLunchFrom" />
+          <ScalarProperty Name="nLunchFrom" ColumnName="nLunchFrom" />
+          <ScalarProperty Name="cLunchTo" ColumnName="cLunchTo" />
+          <ScalarProperty Name="nLunchTo" ColumnName="nLunchTo" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="nLate" ColumnName="nLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="nEarly" ColumnName="nEarly" />
+          <ScalarProperty Name="cOverTime" ColumnName="cOverTime" />
+          <ScalarProperty Name="nOverTime" ColumnName="nOverTime" />
+          <ScalarProperty Name="cTotalHrs" ColumnName="cTotalHrs" />
+          <ScalarProperty Name="nTotalHrs" ColumnName="nTotalHrs" />
+          <ScalarProperty Name="cLateAuth" ColumnName="cLateAuth" />
+          <ScalarProperty Name="cEarlyAuth" ColumnName="cEarlyAuth" />
+          <ScalarProperty Name="cOverTimeAuth" ColumnName="cOverTimeAuth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmpUsers">
+      <EntityTypeMapping TypeName="WebAttn_apModel.tmpUser">
+        <MappingFragment StoreEntitySet="tmpUser">
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cPass" ColumnName="cPass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeaveBalanceTable2">
+      <EntityTypeMapping TypeName="WebAttn_apModel.LeaveBalanceTable2">
+        <MappingFragment StoreEntitySet="LeaveBalanceTable2">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cYear" ColumnName="cYear" />
+          <ScalarProperty Name="PL_Credit" ColumnName="PL_Credit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_Applications">
+      <EntityTypeMapping TypeName="WebAttn_apModel.vw_aspnet_Applications">
+        <MappingFragment StoreEntitySet="vw_aspnet_Applications">
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_MembershipUsers">
+      <EntityTypeMapping TypeName="WebAttn_apModel.vw_aspnet_MembershipUsers">
+        <MappingFragment StoreEntitySet="vw_aspnet_MembershipUsers">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_Profiles">
+      <EntityTypeMapping TypeName="WebAttn_apModel.vw_aspnet_Profiles">
+        <MappingFragment StoreEntitySet="vw_aspnet_Profiles">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="DataSize" ColumnName="DataSize" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_Roles">
+      <EntityTypeMapping TypeName="WebAttn_apModel.vw_aspnet_Roles">
+        <MappingFragment StoreEntitySet="vw_aspnet_Roles">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_Users">
+      <EntityTypeMapping TypeName="WebAttn_apModel.vw_aspnet_Users">
+        <MappingFragment StoreEntitySet="vw_aspnet_Users">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_UsersInRoles">
+      <EntityTypeMapping TypeName="WebAttn_apModel.vw_aspnet_UsersInRoles">
+        <MappingFragment StoreEntitySet="vw_aspnet_UsersInRoles">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_WebPartState_Paths">
+      <EntityTypeMapping TypeName="WebAttn_apModel.vw_aspnet_WebPartState_Paths">
+        <MappingFragment StoreEntitySet="vw_aspnet_WebPartState_Paths">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_WebPartState_Shared">
+      <EntityTypeMapping TypeName="WebAttn_apModel.vw_aspnet_WebPartState_Shared">
+        <MappingFragment StoreEntitySet="vw_aspnet_WebPartState_Shared">
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="DataSize" ColumnName="DataSize" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_aspnet_WebPartState_User">
+      <EntityTypeMapping TypeName="WebAttn_apModel.vw_aspnet_WebPartState_User">
+        <MappingFragment StoreEntitySet="vw_aspnet_WebPartState_User">
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="DataSize" ColumnName="DataSize" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="WebAttn_apModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+      <EndProperty Name="aspnet_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="AbsentReport" FunctionName="WebAttn_apModel.Store.AbsentReport" />
+    <FunctionImportMapping FunctionImportName="AbsentReportCategory" FunctionName="WebAttn_apModel.Store.AbsentReportCategory" />
+    <FunctionImportMapping FunctionImportName="AbsentReportDepartment" FunctionName="WebAttn_apModel.Store.AbsentReportDepartment" />
+    <FunctionImportMapping FunctionImportName="AbsentReportDesignation" FunctionName="WebAttn_apModel.Store.AbsentReportDesignation" />
+    <FunctionImportMapping FunctionImportName="AbsentReportDivision" FunctionName="WebAttn_apModel.Store.AbsentReportDivision" />
+    <FunctionImportMapping FunctionImportName="AbsentReportLocation" FunctionName="WebAttn_apModel.Store.AbsentReportLocation" />
+    <FunctionImportMapping FunctionImportName="aspnet_AnyDataInTables" FunctionName="WebAttn_apModel.Store.aspnet_AnyDataInTables" />
+    <FunctionImportMapping FunctionImportName="aspnet_Applications_CreateApplication" FunctionName="WebAttn_apModel.Store.aspnet_Applications_CreateApplication" />
+    <FunctionImportMapping FunctionImportName="aspnet_CheckSchemaVersion" FunctionName="WebAttn_apModel.Store.aspnet_CheckSchemaVersion" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_ChangePasswordQuestionAndAnswer" FunctionName="WebAttn_apModel.Store.aspnet_Membership_ChangePasswordQuestionAndAnswer" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_CreateUser" FunctionName="WebAttn_apModel.Store.aspnet_Membership_CreateUser" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_FindUsersByEmail" FunctionName="WebAttn_apModel.Store.aspnet_Membership_FindUsersByEmail" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_FindUsersByName" FunctionName="WebAttn_apModel.Store.aspnet_Membership_FindUsersByName" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_GetAllUsers" FunctionName="WebAttn_apModel.Store.aspnet_Membership_GetAllUsers" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_GetNumberOfUsersOnline" FunctionName="WebAttn_apModel.Store.aspnet_Membership_GetNumberOfUsersOnline" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_GetPassword" FunctionName="WebAttn_apModel.Store.aspnet_Membership_GetPassword">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.aspnet_Membership_GetPassword_Result">
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="Column2" ColumnName="Column2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_GetPasswordWithFormat" FunctionName="WebAttn_apModel.Store.aspnet_Membership_GetPasswordWithFormat">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.aspnet_Membership_GetPasswordWithFormat_Result">
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="Column2" ColumnName="Column2" />
+          <ScalarProperty Name="Column3" ColumnName="Column3" />
+          <ScalarProperty Name="Column4" ColumnName="Column4" />
+          <ScalarProperty Name="Column5" ColumnName="Column5" />
+          <ScalarProperty Name="Column6" ColumnName="Column6" />
+          <ScalarProperty Name="Column7" ColumnName="Column7" />
+          <ScalarProperty Name="Column8" ColumnName="Column8" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_GetUserByEmail" FunctionName="WebAttn_apModel.Store.aspnet_Membership_GetUserByEmail" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_GetUserByName" FunctionName="WebAttn_apModel.Store.aspnet_Membership_GetUserByName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.aspnet_Membership_GetUserByName_Result">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_GetUserByUserId" FunctionName="WebAttn_apModel.Store.aspnet_Membership_GetUserByUserId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.aspnet_Membership_GetUserByUserId_Result">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_ResetPassword" FunctionName="WebAttn_apModel.Store.aspnet_Membership_ResetPassword" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_SetPassword" FunctionName="WebAttn_apModel.Store.aspnet_Membership_SetPassword" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_UnlockUser" FunctionName="WebAttn_apModel.Store.aspnet_Membership_UnlockUser" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_UpdateUser" FunctionName="WebAttn_apModel.Store.aspnet_Membership_UpdateUser" />
+    <FunctionImportMapping FunctionImportName="aspnet_Membership_UpdateUserInfo" FunctionName="WebAttn_apModel.Store.aspnet_Membership_UpdateUserInfo" />
+    <FunctionImportMapping FunctionImportName="aspnet_Paths_CreatePath" FunctionName="WebAttn_apModel.Store.aspnet_Paths_CreatePath" />
+    <FunctionImportMapping FunctionImportName="aspnet_Personalization_GetApplicationId" FunctionName="WebAttn_apModel.Store.aspnet_Personalization_GetApplicationId" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationAdministration_DeleteAllState" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationAdministration_DeleteAllState" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationAdministration_FindState" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationAdministration_FindState" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationAdministration_GetCountOfState" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationAdministration_GetCountOfState" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationAdministration_ResetSharedState" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationAdministration_ResetSharedState" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationAdministration_ResetUserState" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationAdministration_ResetUserState" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationAllUsers_GetPageSettings" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationAllUsers_GetPageSettings" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationAllUsers_ResetPageSettings" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationAllUsers_ResetPageSettings" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationAllUsers_SetPageSettings" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationAllUsers_SetPageSettings" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationPerUser_GetPageSettings" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationPerUser_GetPageSettings" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationPerUser_ResetPageSettings" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationPerUser_ResetPageSettings" />
+    <FunctionImportMapping FunctionImportName="aspnet_PersonalizationPerUser_SetPageSettings" FunctionName="WebAttn_apModel.Store.aspnet_PersonalizationPerUser_SetPageSettings" />
+    <FunctionImportMapping FunctionImportName="aspnet_Profile_DeleteInactiveProfiles" FunctionName="WebAttn_apModel.Store.aspnet_Profile_DeleteInactiveProfiles" />
+    <FunctionImportMapping FunctionImportName="aspnet_Profile_DeleteProfiles" FunctionName="WebAttn_apModel.Store.aspnet_Profile_DeleteProfiles" />
+    <FunctionImportMapping FunctionImportName="aspnet_Profile_GetNumberOfInactiveProfiles" FunctionName="WebAttn_apModel.Store.aspnet_Profile_GetNumberOfInactiveProfiles" />
+    <FunctionImportMapping FunctionImportName="aspnet_Profile_GetProfiles" FunctionName="WebAttn_apModel.Store.aspnet_Profile_GetProfiles" />
+    <FunctionImportMapping FunctionImportName="aspnet_Profile_GetProperties" FunctionName="WebAttn_apModel.Store.aspnet_Profile_GetProperties">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.aspnet_Profile_GetProperties_Result">
+          <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+          <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+          <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="aspnet_Profile_SetProperties" FunctionName="WebAttn_apModel.Store.aspnet_Profile_SetProperties" />
+    <FunctionImportMapping FunctionImportName="aspnet_RegisterSchemaVersion" FunctionName="WebAttn_apModel.Store.aspnet_RegisterSchemaVersion" />
+    <FunctionImportMapping FunctionImportName="aspnet_Roles_CreateRole" FunctionName="WebAttn_apModel.Store.aspnet_Roles_CreateRole" />
+    <FunctionImportMapping FunctionImportName="aspnet_Roles_DeleteRole" FunctionName="WebAttn_apModel.Store.aspnet_Roles_DeleteRole" />
+    <FunctionImportMapping FunctionImportName="aspnet_Roles_GetAllRoles" FunctionName="WebAttn_apModel.Store.aspnet_Roles_GetAllRoles" />
+    <FunctionImportMapping FunctionImportName="aspnet_Roles_RoleExists" FunctionName="WebAttn_apModel.Store.aspnet_Roles_RoleExists" />
+    <FunctionImportMapping FunctionImportName="aspnet_Setup_RemoveAllRoleMembers" FunctionName="WebAttn_apModel.Store.aspnet_Setup_RemoveAllRoleMembers" />
+    <FunctionImportMapping FunctionImportName="aspnet_Setup_RestorePermissions" FunctionName="WebAttn_apModel.Store.aspnet_Setup_RestorePermissions" />
+    <FunctionImportMapping FunctionImportName="aspnet_UnRegisterSchemaVersion" FunctionName="WebAttn_apModel.Store.aspnet_UnRegisterSchemaVersion" />
+    <FunctionImportMapping FunctionImportName="aspnet_Users_CreateUser" FunctionName="WebAttn_apModel.Store.aspnet_Users_CreateUser" />
+    <FunctionImportMapping FunctionImportName="aspnet_Users_DeleteUser" FunctionName="WebAttn_apModel.Store.aspnet_Users_DeleteUser" />
+    <FunctionImportMapping FunctionImportName="aspnet_UsersInRoles_AddUsersToRoles" FunctionName="WebAttn_apModel.Store.aspnet_UsersInRoles_AddUsersToRoles" />
+    <FunctionImportMapping FunctionImportName="aspnet_UsersInRoles_FindUsersInRole" FunctionName="WebAttn_apModel.Store.aspnet_UsersInRoles_FindUsersInRole" />
+    <FunctionImportMapping FunctionImportName="aspnet_UsersInRoles_GetRolesForUser" FunctionName="WebAttn_apModel.Store.aspnet_UsersInRoles_GetRolesForUser" />
+    <FunctionImportMapping FunctionImportName="aspnet_UsersInRoles_GetUsersInRoles" FunctionName="WebAttn_apModel.Store.aspnet_UsersInRoles_GetUsersInRoles" />
+    <FunctionImportMapping FunctionImportName="aspnet_UsersInRoles_IsUserInRole" FunctionName="WebAttn_apModel.Store.aspnet_UsersInRoles_IsUserInRole" />
+    <FunctionImportMapping FunctionImportName="aspnet_UsersInRoles_RemoveUsersFromRoles" FunctionName="WebAttn_apModel.Store.aspnet_UsersInRoles_RemoveUsersFromRoles">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.aspnet_UsersInRoles_RemoveUsersFromRoles_Result">
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="aspnet_WebEvent_LogEvent" FunctionName="WebAttn_apModel.Store.aspnet_WebEvent_LogEvent" />
+    <FunctionImportMapping FunctionImportName="AutoProcess" FunctionName="WebAttn_apModel.Store.AutoProcess" />
+    <FunctionImportMapping FunctionImportName="CompoffReport" FunctionName="WebAttn_apModel.Store.CompoffReport" />
+    <FunctionImportMapping FunctionImportName="CompoffReportCategory" FunctionName="WebAttn_apModel.Store.CompoffReportCategory" />
+    <FunctionImportMapping FunctionImportName="CompoffReportDepartment" FunctionName="WebAttn_apModel.Store.CompoffReportDepartment" />
+    <FunctionImportMapping FunctionImportName="CompoffReportDesignation" FunctionName="WebAttn_apModel.Store.CompoffReportDesignation" />
+    <FunctionImportMapping FunctionImportName="CompoffReportDivision" FunctionName="WebAttn_apModel.Store.CompoffReportDivision" />
+    <FunctionImportMapping FunctionImportName="CompoffReportLocation" FunctionName="WebAttn_apModel.Store.CompoffReportLocation" />
+    <FunctionImportMapping FunctionImportName="Compreport" FunctionName="WebAttn_apModel.Store.Compreport" />
+    <FunctionImportMapping FunctionImportName="CrTr" FunctionName="WebAttn_apModel.Store.CrTr" />
+    <FunctionImportMapping FunctionImportName="DailyReport" FunctionName="WebAttn_apModel.Store.DailyReport" />
+    <FunctionImportMapping FunctionImportName="DailyReportAverage" FunctionName="WebAttn_apModel.Store.DailyReportAverage" />
+    <FunctionImportMapping FunctionImportName="DailyReportAverageCategory" FunctionName="WebAttn_apModel.Store.DailyReportAverageCategory" />
+    <FunctionImportMapping FunctionImportName="DailyReportAverageDepartment" FunctionName="WebAttn_apModel.Store.DailyReportAverageDepartment" />
+    <FunctionImportMapping FunctionImportName="DailyReportAverageDesignation" FunctionName="WebAttn_apModel.Store.DailyReportAverageDesignation" />
+    <FunctionImportMapping FunctionImportName="DailyReportAverageDivision" FunctionName="WebAttn_apModel.Store.DailyReportAverageDivision" />
+    <FunctionImportMapping FunctionImportName="DailyReportAverageLocation" FunctionName="WebAttn_apModel.Store.DailyReportAverageLocation" />
+    <FunctionImportMapping FunctionImportName="DailyReportCategory" FunctionName="WebAttn_apModel.Store.DailyReportCategory" />
+    <FunctionImportMapping FunctionImportName="DailyReportDepartment" FunctionName="WebAttn_apModel.Store.DailyReportDepartment" />
+    <FunctionImportMapping FunctionImportName="DailyReportDesignation" FunctionName="WebAttn_apModel.Store.DailyReportDesignation" />
+    <FunctionImportMapping FunctionImportName="DailyReportDivision" FunctionName="WebAttn_apModel.Store.DailyReportDivision" />
+    <FunctionImportMapping FunctionImportName="DailyReportLocation" FunctionName="WebAttn_apModel.Store.DailyReportLocation" />
+    <FunctionImportMapping FunctionImportName="dt_addtosourcecontrol" FunctionName="WebAttn_apModel.Store.dt_addtosourcecontrol" />
+    <FunctionImportMapping FunctionImportName="dt_addtosourcecontrol_u" FunctionName="WebAttn_apModel.Store.dt_addtosourcecontrol_u" />
+    <FunctionImportMapping FunctionImportName="dt_adduserobject" FunctionName="WebAttn_apModel.Store.dt_adduserobject" />
+    <FunctionImportMapping FunctionImportName="dt_adduserobject_vcs" FunctionName="WebAttn_apModel.Store.dt_adduserobject_vcs" />
+    <FunctionImportMapping FunctionImportName="dt_checkinobject" FunctionName="WebAttn_apModel.Store.dt_checkinobject" />
+    <FunctionImportMapping FunctionImportName="dt_checkinobject_u" FunctionName="WebAttn_apModel.Store.dt_checkinobject_u" />
+    <FunctionImportMapping FunctionImportName="dt_checkoutobject" FunctionName="WebAttn_apModel.Store.dt_checkoutobject" />
+    <FunctionImportMapping FunctionImportName="dt_checkoutobject_u" FunctionName="WebAttn_apModel.Store.dt_checkoutobject_u" />
+    <FunctionImportMapping FunctionImportName="dt_displayoaerror" FunctionName="WebAttn_apModel.Store.dt_displayoaerror" />
+    <FunctionImportMapping FunctionImportName="dt_displayoaerror_u" FunctionName="WebAttn_apModel.Store.dt_displayoaerror_u" />
+    <FunctionImportMapping FunctionImportName="dt_droppropertiesbyid" FunctionName="WebAttn_apModel.Store.dt_droppropertiesbyid" />
+    <FunctionImportMapping FunctionImportName="dt_dropuserobjectbyid" FunctionName="WebAttn_apModel.Store.dt_dropuserobjectbyid" />
+    <FunctionImportMapping FunctionImportName="dt_generateansiname" FunctionName="WebAttn_apModel.Store.dt_generateansiname" />
+    <FunctionImportMapping FunctionImportName="dt_getobjwithprop" FunctionName="WebAttn_apModel.Store.dt_getobjwithprop" />
+    <FunctionImportMapping FunctionImportName="dt_getobjwithprop_u" FunctionName="WebAttn_apModel.Store.dt_getobjwithprop_u" />
+    <FunctionImportMapping FunctionImportName="dt_getpropertiesbyid" FunctionName="WebAttn_apModel.Store.dt_getpropertiesbyid">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.dt_getpropertiesbyid_Result">
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dt_getpropertiesbyid_u" FunctionName="WebAttn_apModel.Store.dt_getpropertiesbyid_u">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.dt_getpropertiesbyid_u_Result">
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="uvalue" ColumnName="uvalue" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dt_getpropertiesbyid_vcs" FunctionName="WebAttn_apModel.Store.dt_getpropertiesbyid_vcs" />
+    <FunctionImportMapping FunctionImportName="dt_getpropertiesbyid_vcs_u" FunctionName="WebAttn_apModel.Store.dt_getpropertiesbyid_vcs_u" />
+    <FunctionImportMapping FunctionImportName="dt_isundersourcecontrol" FunctionName="WebAttn_apModel.Store.dt_isundersourcecontrol" />
+    <FunctionImportMapping FunctionImportName="dt_isundersourcecontrol_u" FunctionName="WebAttn_apModel.Store.dt_isundersourcecontrol_u" />
+    <FunctionImportMapping FunctionImportName="dt_removefromsourcecontrol" FunctionName="WebAttn_apModel.Store.dt_removefromsourcecontrol" />
+    <FunctionImportMapping FunctionImportName="dt_setpropertybyid" FunctionName="WebAttn_apModel.Store.dt_setpropertybyid" />
+    <FunctionImportMapping FunctionImportName="dt_setpropertybyid_u" FunctionName="WebAttn_apModel.Store.dt_setpropertybyid_u" />
+    <FunctionImportMapping FunctionImportName="dt_validateloginparams" FunctionName="WebAttn_apModel.Store.dt_validateloginparams" />
+    <FunctionImportMapping FunctionImportName="dt_validateloginparams_u" FunctionName="WebAttn_apModel.Store.dt_validateloginparams_u" />
+    <FunctionImportMapping FunctionImportName="dt_vcsenabled" FunctionName="WebAttn_apModel.Store.dt_vcsenabled" />
+    <FunctionImportMapping FunctionImportName="dt_verstamp006" FunctionName="WebAttn_apModel.Store.dt_verstamp006" />
+    <FunctionImportMapping FunctionImportName="dt_whocheckedout" FunctionName="WebAttn_apModel.Store.dt_whocheckedout" />
+    <FunctionImportMapping FunctionImportName="dt_whocheckedout_u" FunctionName="WebAttn_apModel.Store.dt_whocheckedout_u" />
+    <FunctionImportMapping FunctionImportName="EarlygoingReport" FunctionName="WebAttn_apModel.Store.EarlygoingReport" />
+    <FunctionImportMapping FunctionImportName="EarlygoingReportCategory" FunctionName="WebAttn_apModel.Store.EarlygoingReportCategory" />
+    <FunctionImportMapping FunctionImportName="EarlygoingReportDepartment" FunctionName="WebAttn_apModel.Store.EarlygoingReportDepartment" />
+    <FunctionImportMapping FunctionImportName="EarlygoingReportDesignation" FunctionName="WebAttn_apModel.Store.EarlygoingReportDesignation" />
+    <FunctionImportMapping FunctionImportName="EarlygoingReportDivision" FunctionName="WebAttn_apModel.Store.EarlygoingReportDivision" />
+    <FunctionImportMapping FunctionImportName="EarlygoingReportLocation" FunctionName="WebAttn_apModel.Store.EarlygoingReportLocation" />
+    <FunctionImportMapping FunctionImportName="EarlyGoingShiftUpdate" FunctionName="WebAttn_apModel.Store.EarlyGoingShiftUpdate" />
+    <FunctionImportMapping FunctionImportName="EmployeeRegisterInoutReport" FunctionName="WebAttn_apModel.Store.EmployeeRegisterInoutReport" />
+    <FunctionImportMapping FunctionImportName="EmployeeRegisterReport" FunctionName="WebAttn_apModel.Store.EmployeeRegisterReport" />
+    <FunctionImportMapping FunctionImportName="EmployeeRegisterReportCategory" FunctionName="WebAttn_apModel.Store.EmployeeRegisterReportCategory" />
+    <FunctionImportMapping FunctionImportName="EmployeeRegisterReportDepartment" FunctionName="WebAttn_apModel.Store.EmployeeRegisterReportDepartment" />
+    <FunctionImportMapping FunctionImportName="EmployeeRegisterReportDesignation" FunctionName="WebAttn_apModel.Store.EmployeeRegisterReportDesignation" />
+    <FunctionImportMapping FunctionImportName="EmployeeRegisterReportDivision" FunctionName="WebAttn_apModel.Store.EmployeeRegisterReportDivision" />
+    <FunctionImportMapping FunctionImportName="EmployeeRegisterReportLocation" FunctionName="WebAttn_apModel.Store.EmployeeRegisterReportLocation" />
+    <FunctionImportMapping FunctionImportName="ErrorReport" FunctionName="WebAttn_apModel.Store.ErrorReport" />
+    <FunctionImportMapping FunctionImportName="GetOtherUsers" FunctionName="WebAttn_apModel.Store.GetOtherUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.GetOtherUsers_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetPendingEmails" FunctionName="WebAttn_apModel.Store.GetPendingEmails" />
+    <FunctionImportMapping FunctionImportName="LateComingReport" FunctionName="WebAttn_apModel.Store.LateComingReport" />
+    <FunctionImportMapping FunctionImportName="LateComingReportCategory" FunctionName="WebAttn_apModel.Store.LateComingReportCategory" />
+    <FunctionImportMapping FunctionImportName="LateComingReportDepartment" FunctionName="WebAttn_apModel.Store.LateComingReportDepartment" />
+    <FunctionImportMapping FunctionImportName="LateComingReportDesignation" FunctionName="WebAttn_apModel.Store.LateComingReportDesignation" />
+    <FunctionImportMapping FunctionImportName="LateComingReportDivision" FunctionName="WebAttn_apModel.Store.LateComingReportDivision" />
+    <FunctionImportMapping FunctionImportName="LateComingReportLocation" FunctionName="WebAttn_apModel.Store.LateComingReportLocation" />
+    <FunctionImportMapping FunctionImportName="LateComingShiftUpdate" FunctionName="WebAttn_apModel.Store.LateComingShiftUpdate" />
+    <FunctionImportMapping FunctionImportName="LocationGrouping" FunctionName="WebAttn_apModel.Store.LocationGrouping" />
+    <FunctionImportMapping FunctionImportName="NewInsertCommand" FunctionName="WebAttn_apModel.Store.NewInsertCommand" />
+    <FunctionImportMapping FunctionImportName="NewSelectCommand" FunctionName="WebAttn_apModel.Store.NewSelectCommand">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.NewSelectCommand_Result">
+          <ScalarProperty Name="cEmpCode" ColumnName="cEmpCode" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cShift_code" ColumnName="cShift_code" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="P1" ColumnName="P1" />
+          <ScalarProperty Name="P2" ColumnName="P2" />
+          <ScalarProperty Name="P3" ColumnName="P3" />
+          <ScalarProperty Name="P4" ColumnName="P4" />
+          <ScalarProperty Name="P5" ColumnName="P5" />
+          <ScalarProperty Name="P6" ColumnName="P6" />
+          <ScalarProperty Name="P7" ColumnName="P7" />
+          <ScalarProperty Name="P8" ColumnName="P8" />
+          <ScalarProperty Name="P9" ColumnName="P9" />
+          <ScalarProperty Name="P10" ColumnName="P10" />
+          <ScalarProperty Name="P11" ColumnName="P11" />
+          <ScalarProperty Name="P12" ColumnName="P12" />
+          <ScalarProperty Name="P13" ColumnName="P13" />
+          <ScalarProperty Name="P14" ColumnName="P14" />
+          <ScalarProperty Name="P15" ColumnName="P15" />
+          <ScalarProperty Name="P16" ColumnName="P16" />
+          <ScalarProperty Name="P17" ColumnName="P17" />
+          <ScalarProperty Name="P18" ColumnName="P18" />
+          <ScalarProperty Name="P19" ColumnName="P19" />
+          <ScalarProperty Name="P20" ColumnName="P20" />
+          <ScalarProperty Name="P21" ColumnName="P21" />
+          <ScalarProperty Name="P22" ColumnName="P22" />
+          <ScalarProperty Name="P23" ColumnName="P23" />
+          <ScalarProperty Name="P24" ColumnName="P24" />
+          <ScalarProperty Name="P25" ColumnName="P25" />
+          <ScalarProperty Name="P26" ColumnName="P26" />
+          <ScalarProperty Name="P27" ColumnName="P27" />
+          <ScalarProperty Name="P28" ColumnName="P28" />
+          <ScalarProperty Name="P29" ColumnName="P29" />
+          <ScalarProperty Name="P30" ColumnName="P30" />
+          <ScalarProperty Name="p31" ColumnName="p31" />
+          <ScalarProperty Name="sanction" ColumnName="sanction" />
+          <ScalarProperty Name="cUserName" ColumnName="cUserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="OvertimeReport" FunctionName="WebAttn_apModel.Store.OvertimeReport" />
+    <FunctionImportMapping FunctionImportName="OvertimeReportCategory" FunctionName="WebAttn_apModel.Store.OvertimeReportCategory" />
+    <FunctionImportMapping FunctionImportName="OvertimeReportDepartment" FunctionName="WebAttn_apModel.Store.OvertimeReportDepartment" />
+    <FunctionImportMapping FunctionImportName="OvertimeReportDesignation" FunctionName="WebAttn_apModel.Store.OvertimeReportDesignation" />
+    <FunctionImportMapping FunctionImportName="OvertimeReportDivision" FunctionName="WebAttn_apModel.Store.OvertimeReportDivision" />
+    <FunctionImportMapping FunctionImportName="OvertimeReportLocation" FunctionName="WebAttn_apModel.Store.OvertimeReportLocation" />
+    <FunctionImportMapping FunctionImportName="OvertimeShiftUpdate" FunctionName="WebAttn_apModel.Store.OvertimeShiftUpdate" />
+    <FunctionImportMapping FunctionImportName="PunchesReport" FunctionName="WebAttn_apModel.Store.PunchesReport" />
+    <FunctionImportMapping FunctionImportName="PunchesReportCategory" FunctionName="WebAttn_apModel.Store.PunchesReportCategory" />
+    <FunctionImportMapping FunctionImportName="PunchesReportDepartment" FunctionName="WebAttn_apModel.Store.PunchesReportDepartment" />
+    <FunctionImportMapping FunctionImportName="PunchesReportDesignation" FunctionName="WebAttn_apModel.Store.PunchesReportDesignation" />
+    <FunctionImportMapping FunctionImportName="PunchesReportDivision" FunctionName="WebAttn_apModel.Store.PunchesReportDivision" />
+    <FunctionImportMapping FunctionImportName="PunchesReportLocation" FunctionName="WebAttn_apModel.Store.PunchesReportLocation" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="WebAttn_apModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="WebAttn_apModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="WebAttn_apModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="WebAttn_apModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="WebAttn_apModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="WebAttn_apModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="WebAttn_apModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="sprocBUDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocBUDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocBUDistincGroupSelectList" FunctionName="WebAttn_apModel.Store.sprocBUDistincGroupSelectList" />
+    <FunctionImportMapping FunctionImportName="sprocBUGroupDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocBUGroupDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocBUGroupInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocBUGroupInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocBUGroupSelectList" FunctionName="WebAttn_apModel.Store.sprocBUGroupSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocBUGroupSelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cBUGroupcode" ColumnName="cBUGroupcode" />
+          <ScalarProperty Name="cBUCode" ColumnName="cBUCode" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocBUGroupSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocBUGroupSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocBUGroupSelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cBUGroupcode" ColumnName="cBUGroupcode" />
+          <ScalarProperty Name="cBUCode" ColumnName="cBUCode" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocBUInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocBUInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocBUSelectList" FunctionName="WebAttn_apModel.Store.sprocBUSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocBUSelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cBUcode" ColumnName="cBUcode" />
+          <ScalarProperty Name="cBUdesc" ColumnName="cBUdesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocBUSelectReportList" FunctionName="WebAttn_apModel.Store.sprocBUSelectReportList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocBUSelectReportList_Result">
+          <ScalarProperty Name="cBUcode" ColumnName="cBUcode" />
+          <ScalarProperty Name="cBUDesc" ColumnName="cBUDesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocBUSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocBUSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocBUSelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cBUcode" ColumnName="cBUcode" />
+          <ScalarProperty Name="cBUdesc" ColumnName="cBUdesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocCategoryDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocCategoryDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocCategoryInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocCategoryInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocCategorySelectList" FunctionName="WebAttn_apModel.Store.sprocCategorySelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocCategorySelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cCategorycode" ColumnName="cCategorycode" />
+          <ScalarProperty Name="cCategorydesc" ColumnName="cCategorydesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sproccategorySelectReportList" FunctionName="WebAttn_apModel.Store.sproccategorySelectReportList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sproccategorySelectReportList_Result">
+          <ScalarProperty Name="ccategorycode" ColumnName="ccategorycode" />
+          <ScalarProperty Name="ccategoryDesc" ColumnName="ccategoryDesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocCategorySelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocCategorySelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocCategorySelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cCategorycode" ColumnName="cCategorycode" />
+          <ScalarProperty Name="cCategorydesc" ColumnName="cCategorydesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocCompanyDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocCompanyDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocCompanyInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocCompanyInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocCompanySelectList" FunctionName="WebAttn_apModel.Store.sprocCompanySelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocCompanySelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ccompcode" ColumnName="ccompcode" />
+          <ScalarProperty Name="ccompname" ColumnName="ccompname" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocCompanySelectReportList" FunctionName="WebAttn_apModel.Store.sprocCompanySelectReportList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocCompanySelectReportList_Result">
+          <ScalarProperty Name="ccompcode" ColumnName="ccompcode" />
+          <ScalarProperty Name="ccompName" ColumnName="ccompName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocCompanySelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocCompanySelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocCompanySelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ccompcode" ColumnName="ccompcode" />
+          <ScalarProperty Name="ccompname" ColumnName="ccompname" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocCompoffApproveSingleItem" FunctionName="WebAttn_apModel.Store.sprocCompoffApproveSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocCompoffDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocCompoffDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocCompoffSelectEmployeeList" FunctionName="WebAttn_apModel.Store.sprocCompoffSelectEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocCompoffSelectEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocCompoffSelectHodlist" FunctionName="WebAttn_apModel.Store.sprocCompoffSelectHodlist">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocCompoffSelectHodlist_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="dtWorkDate" ColumnName="dtWorkDate" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocCompoffSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocCompoffSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocCompoffSelectSingleItem_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="dtWorkdate" ColumnName="dtWorkdate" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocCompoffUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocCompoffUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocDepartmentDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocDepartmentDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocDepartmentInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocDepartmentInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocDepartmentSelectList" FunctionName="WebAttn_apModel.Store.sprocDepartmentSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocDepartmentSelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cDepartmentcode" ColumnName="cDepartmentcode" />
+          <ScalarProperty Name="cDepartmentdesc" ColumnName="cDepartmentdesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocDepartmentSelectReportList" FunctionName="WebAttn_apModel.Store.sprocDepartmentSelectReportList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocDepartmentSelectReportList_Result">
+          <ScalarProperty Name="cDepartmentcode" ColumnName="cDepartmentcode" />
+          <ScalarProperty Name="cDepartmentDesc" ColumnName="cDepartmentDesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocDepartmentSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocDepartmentSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocDepartmentSelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cDepartmentcode" ColumnName="cDepartmentcode" />
+          <ScalarProperty Name="cDepartmentdesc" ColumnName="cDepartmentdesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocDesignationDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocDesignationDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocDesignationInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocDesignationInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocDesignationSelectList" FunctionName="WebAttn_apModel.Store.sprocDesignationSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocDesignationSelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cDesignationcode" ColumnName="cDesignationcode" />
+          <ScalarProperty Name="cDesignationdesc" ColumnName="cDesignationdesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocDesignationSelectReportList" FunctionName="WebAttn_apModel.Store.sprocDesignationSelectReportList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocDesignationSelectReportList_Result">
+          <ScalarProperty Name="cDesignationcode" ColumnName="cDesignationcode" />
+          <ScalarProperty Name="cDesignationDesc" ColumnName="cDesignationDesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocDesignationSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocDesignationSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocDesignationSelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cDesignationcode" ColumnName="cDesignationcode" />
+          <ScalarProperty Name="cDesignationdesc" ColumnName="cDesignationdesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocDivisionDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocDivisionDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocDivisionInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocDivisionInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocDivisionSelectList" FunctionName="WebAttn_apModel.Store.sprocDivisionSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocDivisionSelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cDivisioncode" ColumnName="cDivisioncode" />
+          <ScalarProperty Name="cDivisiondesc" ColumnName="cDivisiondesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocDivisionSelectReportList" FunctionName="WebAttn_apModel.Store.sprocDivisionSelectReportList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocDivisionSelectReportList_Result">
+          <ScalarProperty Name="cDivisioncode" ColumnName="cDivisioncode" />
+          <ScalarProperty Name="cDivisionDesc" ColumnName="cDivisionDesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocDivisionSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocDivisionSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocDivisionSelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cDivisioncode" ColumnName="cDivisioncode" />
+          <ScalarProperty Name="cDivisiondesc" ColumnName="cDivisiondesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEarlySelectEmployeeList" FunctionName="WebAttn_apModel.Store.sprocEarlySelectEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEarlySelectEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEarlySelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocEarlySelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEarlySelectSingleItem_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="cEarlyAuth" ColumnName="cEarlyAuth" />
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEarlyUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocEarlyUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocEmailDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocEmailDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocEmailInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocEmailInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocEmailSelectList" FunctionName="WebAttn_apModel.Store.sprocEmailSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmailSelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cHodcode" ColumnName="cHodcode" />
+          <ScalarProperty Name="cEmaildesc" ColumnName="cEmaildesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmailSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocEmailSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmailSelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cHodcode" ColumnName="cHodcode" />
+          <ScalarProperty Name="cEmaildesc" ColumnName="cEmaildesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocEmployeeDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocEmployeeInsertExcel" FunctionName="WebAttn_apModel.Store.sprocEmployeeInsertExcel" />
+    <FunctionImportMapping FunctionImportName="sprocEmployeeInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocEmployeeInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocEmployeeRemarksInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocEmployeeRemarksInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocEmployeeRemarksSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocEmployeeRemarksSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmployeeRemarksSelectSingleItem_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtDate" ColumnName="dtDate" />
+          <ScalarProperty Name="cRemarks" ColumnName="cRemarks" />
+          <ScalarProperty Name="cUserName" ColumnName="cUserName" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeSelectBalnkemailList" FunctionName="WebAttn_apModel.Store.sprocEmployeeSelectBalnkemailList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmployeeSelectBalnkemailList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="nOffday1" ColumnName="nOffday1" />
+          <ScalarProperty Name="nOffday2" ColumnName="nOffday2" />
+          <ScalarProperty Name="noffday3" ColumnName="noffday3" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeSelectBulkUserListemp" FunctionName="WebAttn_apModel.Store.sprocEmployeeSelectBulkUserListemp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmployeeSelectBulkUserListemp_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="nOffday1" ColumnName="nOffday1" />
+          <ScalarProperty Name="nOffday2" ColumnName="nOffday2" />
+          <ScalarProperty Name="noffday3" ColumnName="noffday3" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeSelectList" FunctionName="WebAttn_apModel.Store.sprocEmployeeSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmployeeSelectList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cPresentAddress" ColumnName="cPresentAddress" />
+          <ScalarProperty Name="cPermanantAddress" ColumnName="cPermanantAddress" />
+          <ScalarProperty Name="cMobileNo" ColumnName="cMobileNo" />
+          <ScalarProperty Name="cContactPerson" ColumnName="cContactPerson" />
+          <ScalarProperty Name="cContactMobileNo" ColumnName="cContactMobileNo" />
+          <ScalarProperty Name="cFatherspouceName" ColumnName="cFatherspouceName" />
+          <ScalarProperty Name="cNationality" ColumnName="cNationality" />
+          <ScalarProperty Name="dtDOB" ColumnName="dtDOB" />
+          <ScalarProperty Name="dtDOJ" ColumnName="dtDOJ" />
+          <ScalarProperty Name="dtDOL" ColumnName="dtDOL" />
+          <ScalarProperty Name="cSex" ColumnName="cSex" />
+          <ScalarProperty Name="cJobStatus" ColumnName="cJobStatus" />
+          <ScalarProperty Name="cShift1" ColumnName="cShift1" />
+          <ScalarProperty Name="cShift2" ColumnName="cShift2" />
+          <ScalarProperty Name="cShift3" ColumnName="cShift3" />
+          <ScalarProperty Name="nDays" ColumnName="nDays" />
+          <ScalarProperty Name="dtBaseDate" ColumnName="dtBaseDate" />
+          <ScalarProperty Name="cFlexible" ColumnName="cFlexible" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="cOT" ColumnName="cOT" />
+          <ScalarProperty Name="cLateWOPH" ColumnName="cLateWOPH" />
+          <ScalarProperty Name="cEarlyWOPH" ColumnName="cEarlyWOPH" />
+          <ScalarProperty Name="cOTWOPH" ColumnName="cOTWOPH" />
+          <ScalarProperty Name="cCompCode" ColumnName="cCompCode" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cDepartmentCode" ColumnName="cDepartmentCode" />
+          <ScalarProperty Name="cCategoryCode" ColumnName="cCategoryCode" />
+          <ScalarProperty Name="cDivisionCode" ColumnName="cDivisionCode" />
+          <ScalarProperty Name="cDesignationCode" ColumnName="cDesignationCode" />
+          <ScalarProperty Name="cOdd" ColumnName="cOdd" />
+          <ScalarProperty Name="cMin" ColumnName="cMin" />
+          <ScalarProperty Name="cMax" ColumnName="cMax" />
+          <ScalarProperty Name="nMaxTime" ColumnName="nMaxTime" />
+          <ScalarProperty Name="cFullDay" ColumnName="cFullDay" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="nOffDay1" ColumnName="nOffDay1" />
+          <ScalarProperty Name="nOffDay2" ColumnName="nOffDay2" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="cHod" ColumnName="cHod" />
+          <ScalarProperty Name="cHod1" ColumnName="cHod1" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+          <ScalarProperty Name="nOffDay3" ColumnName="nOffDay3" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeSelectReportList" FunctionName="WebAttn_apModel.Store.sprocEmployeeSelectReportList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmployeeSelectReportList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="nOffday1" ColumnName="nOffday1" />
+          <ScalarProperty Name="nOffday2" ColumnName="nOffday2" />
+          <ScalarProperty Name="noffday3" ColumnName="noffday3" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeSelectReportListemp" FunctionName="WebAttn_apModel.Store.sprocEmployeeSelectReportListemp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmployeeSelectReportListemp_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="nOffday1" ColumnName="nOffday1" />
+          <ScalarProperty Name="nOffday2" ColumnName="nOffday2" />
+          <ScalarProperty Name="noffday3" ColumnName="noffday3" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeSelectSingleidItem" FunctionName="WebAttn_apModel.Store.sprocEmployeeSelectSingleidItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmployeeSelectSingleidItem_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cPresentAddress" ColumnName="cPresentAddress" />
+          <ScalarProperty Name="cPermanantAddress" ColumnName="cPermanantAddress" />
+          <ScalarProperty Name="cMobileNo" ColumnName="cMobileNo" />
+          <ScalarProperty Name="cContactPerson" ColumnName="cContactPerson" />
+          <ScalarProperty Name="cContactMobileNo" ColumnName="cContactMobileNo" />
+          <ScalarProperty Name="cFatherspouceName" ColumnName="cFatherspouceName" />
+          <ScalarProperty Name="cNationality" ColumnName="cNationality" />
+          <ScalarProperty Name="dtDOB" ColumnName="dtDOB" />
+          <ScalarProperty Name="dtDOJ" ColumnName="dtDOJ" />
+          <ScalarProperty Name="dtDOL" ColumnName="dtDOL" />
+          <ScalarProperty Name="cSex" ColumnName="cSex" />
+          <ScalarProperty Name="cJobStatus" ColumnName="cJobStatus" />
+          <ScalarProperty Name="cShift1" ColumnName="cShift1" />
+          <ScalarProperty Name="cShift2" ColumnName="cShift2" />
+          <ScalarProperty Name="cShift3" ColumnName="cShift3" />
+          <ScalarProperty Name="nDays" ColumnName="nDays" />
+          <ScalarProperty Name="dtBaseDate" ColumnName="dtBaseDate" />
+          <ScalarProperty Name="cFlexible" ColumnName="cFlexible" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="cOT" ColumnName="cOT" />
+          <ScalarProperty Name="cLateWOPH" ColumnName="cLateWOPH" />
+          <ScalarProperty Name="cEarlyWOPH" ColumnName="cEarlyWOPH" />
+          <ScalarProperty Name="cOTWOPH" ColumnName="cOTWOPH" />
+          <ScalarProperty Name="cCompCode" ColumnName="cCompCode" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cDepartmentCode" ColumnName="cDepartmentCode" />
+          <ScalarProperty Name="cCategoryCode" ColumnName="cCategoryCode" />
+          <ScalarProperty Name="cDivisionCode" ColumnName="cDivisionCode" />
+          <ScalarProperty Name="cDesignationCode" ColumnName="cDesignationCode" />
+          <ScalarProperty Name="cOdd" ColumnName="cOdd" />
+          <ScalarProperty Name="cMin" ColumnName="cMin" />
+          <ScalarProperty Name="cMax" ColumnName="cMax" />
+          <ScalarProperty Name="nMaxTime" ColumnName="nMaxTime" />
+          <ScalarProperty Name="cFullDay" ColumnName="cFullDay" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="nOffDay1" ColumnName="nOffDay1" />
+          <ScalarProperty Name="nOffDay2" ColumnName="nOffDay2" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="cHod" ColumnName="cHod" />
+          <ScalarProperty Name="cHod1" ColumnName="cHod1" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+          <ScalarProperty Name="nOffDay3" ColumnName="nOffDay3" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocEmployeeSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmployeeSelectSingleItem_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cPresentAddress" ColumnName="cPresentAddress" />
+          <ScalarProperty Name="cPermanantAddress" ColumnName="cPermanantAddress" />
+          <ScalarProperty Name="cMobileNo" ColumnName="cMobileNo" />
+          <ScalarProperty Name="cContactPerson" ColumnName="cContactPerson" />
+          <ScalarProperty Name="cContactMobileNo" ColumnName="cContactMobileNo" />
+          <ScalarProperty Name="cFatherspouceName" ColumnName="cFatherspouceName" />
+          <ScalarProperty Name="cNationality" ColumnName="cNationality" />
+          <ScalarProperty Name="dtDOB" ColumnName="dtDOB" />
+          <ScalarProperty Name="dtDOJ" ColumnName="dtDOJ" />
+          <ScalarProperty Name="dtDOL" ColumnName="dtDOL" />
+          <ScalarProperty Name="cSex" ColumnName="cSex" />
+          <ScalarProperty Name="cJobStatus" ColumnName="cJobStatus" />
+          <ScalarProperty Name="cShift1" ColumnName="cShift1" />
+          <ScalarProperty Name="cShift2" ColumnName="cShift2" />
+          <ScalarProperty Name="cShift3" ColumnName="cShift3" />
+          <ScalarProperty Name="nDays" ColumnName="nDays" />
+          <ScalarProperty Name="dtBaseDate" ColumnName="dtBaseDate" />
+          <ScalarProperty Name="cFlexible" ColumnName="cFlexible" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="cOT" ColumnName="cOT" />
+          <ScalarProperty Name="cLateWOPH" ColumnName="cLateWOPH" />
+          <ScalarProperty Name="cEarlyWOPH" ColumnName="cEarlyWOPH" />
+          <ScalarProperty Name="cOTWOPH" ColumnName="cOTWOPH" />
+          <ScalarProperty Name="cCompCode" ColumnName="cCompCode" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cDepartmentCode" ColumnName="cDepartmentCode" />
+          <ScalarProperty Name="cCategoryCode" ColumnName="cCategoryCode" />
+          <ScalarProperty Name="cDivisionCode" ColumnName="cDivisionCode" />
+          <ScalarProperty Name="cDesignationCode" ColumnName="cDesignationCode" />
+          <ScalarProperty Name="cOdd" ColumnName="cOdd" />
+          <ScalarProperty Name="cMin" ColumnName="cMin" />
+          <ScalarProperty Name="cMax" ColumnName="cMax" />
+          <ScalarProperty Name="nMaxTime" ColumnName="nMaxTime" />
+          <ScalarProperty Name="cFullDay" ColumnName="cFullDay" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="nOffDay1" ColumnName="nOffDay1" />
+          <ScalarProperty Name="nOffDay2" ColumnName="nOffDay2" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="cHod" ColumnName="cHod" />
+          <ScalarProperty Name="cHod1" ColumnName="cHod1" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+          <ScalarProperty Name="nOffDay3" ColumnName="nOffDay3" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeSelectTeamListemp" FunctionName="WebAttn_apModel.Store.sprocEmployeeSelectTeamListemp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmployeeSelectTeamListemp_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="nOffday1" ColumnName="nOffday1" />
+          <ScalarProperty Name="nOffday2" ColumnName="nOffday2" />
+          <ScalarProperty Name="noffday3" ColumnName="noffday3" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeSelecttReportManagerListemp" FunctionName="WebAttn_apModel.Store.sprocEmployeeSelecttReportManagerListemp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocEmployeeSelecttReportManagerListemp_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="nOffday1" ColumnName="nOffday1" />
+          <ScalarProperty Name="nOffday2" ColumnName="nOffday2" />
+          <ScalarProperty Name="noffday3" ColumnName="noffday3" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocEmployeeUpdateExcel" FunctionName="WebAttn_apModel.Store.sprocEmployeeUpdateExcel" />
+    <FunctionImportMapping FunctionImportName="sprocEmployeeUpdateManager" FunctionName="WebAttn_apModel.Store.sprocEmployeeUpdateManager" />
+    <FunctionImportMapping FunctionImportName="sprocEmployeeUpdateWO" FunctionName="WebAttn_apModel.Store.sprocEmployeeUpdateWO" />
+    <FunctionImportMapping FunctionImportName="sprocEmployeeUserSelectReportList" FunctionName="WebAttn_apModel.Store.sprocEmployeeUserSelectReportList" />
+    <FunctionImportMapping FunctionImportName="sprocEmpReport" FunctionName="WebAttn_apModel.Store.sprocEmpReport" />
+    <FunctionImportMapping FunctionImportName="sprocHodAllView" FunctionName="WebAttn_apModel.Store.sprocHodAllView" />
+    <FunctionImportMapping FunctionImportName="sprocHodDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocHodDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocHodInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocHodInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocHodSelectList" FunctionName="WebAttn_apModel.Store.sprocHodSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocHodSelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cHodcode" ColumnName="cHodcode" />
+          <ScalarProperty Name="cHoddesc" ColumnName="cHoddesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocHodSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocHodSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocHodSelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cHodcode" ColumnName="cHodcode" />
+          <ScalarProperty Name="cHoddesc" ColumnName="cHoddesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocHolidayDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocHolidayDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocHolidayInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocHolidayInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocHolidaySelectList" FunctionName="WebAttn_apModel.Store.sprocHolidaySelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocHolidaySelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cHolidaycode" ColumnName="cHolidaycode" />
+          <ScalarProperty Name="cHolidaydesc" ColumnName="cHolidaydesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="cStatuscode" ColumnName="cStatuscode" />
+          <ScalarProperty Name="cLocationcode" ColumnName="cLocationcode" />
+          <ScalarProperty Name="cBUcode" ColumnName="cBUcode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocHolidaySelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocHolidaySelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocHolidaySelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cHolidaycode" ColumnName="cHolidaycode" />
+          <ScalarProperty Name="cHolidaydesc" ColumnName="cHolidaydesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="cStatuscode" ColumnName="cStatuscode" />
+          <ScalarProperty Name="cLocationcode" ColumnName="cLocationcode" />
+          <ScalarProperty Name="cBUcode" ColumnName="cBUcode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLateSelectEmployeeList" FunctionName="WebAttn_apModel.Store.sprocLateSelectEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLateSelectEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLateSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocLateSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLateSelectSingleItem_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="cLateAuth" ColumnName="cLateAuth" />
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLateUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocLateUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveApplicationApproveSingleItem" FunctionName="WebAttn_apModel.Store.sprocLeaveApplicationApproveSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveApplicationCancelSingleItem" FunctionName="WebAttn_apModel.Store.sprocLeaveApplicationCancelSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveApplicationDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocLeaveApplicationDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveApplicationLock" FunctionName="WebAttn_apModel.Store.sprocLeaveApplicationLock" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveApplicationSelectEmployeeList" FunctionName="WebAttn_apModel.Store.sprocLeaveApplicationSelectEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLeaveApplicationSelectEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="noffday1" ColumnName="noffday1" />
+          <ScalarProperty Name="noffday2" ColumnName="noffday2" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLeaveApplicationSelectHodlist" FunctionName="WebAttn_apModel.Store.sprocLeaveApplicationSelectHodlist">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLeaveApplicationSelectHodlist_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="dtHalfDate" ColumnName="dtHalfDate" />
+          <ScalarProperty Name="cLeaveTypeCode" ColumnName="cLeaveTypeCode" />
+          <ScalarProperty Name="nDays" ColumnName="nDays" />
+          <ScalarProperty Name="cFullHalf" ColumnName="cFullHalf" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cReason" ColumnName="cReason" />
+          <ScalarProperty Name="cInclude" ColumnName="cInclude" />
+          <ScalarProperty Name="cComments" ColumnName="cComments" />
+          <ScalarProperty Name="cEmailIDs" ColumnName="cEmailIDs" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLeaveApplicationSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocLeaveApplicationSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLeaveApplicationSelectSingleItem_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="dtHalfDate" ColumnName="dtHalfDate" />
+          <ScalarProperty Name="cLeaveTypeCode" ColumnName="cLeaveTypeCode" />
+          <ScalarProperty Name="nDays" ColumnName="nDays" />
+          <ScalarProperty Name="cFullHalf" ColumnName="cFullHalf" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cReason" ColumnName="cReason" />
+          <ScalarProperty Name="cInclude" ColumnName="cInclude" />
+          <ScalarProperty Name="cComments" ColumnName="cComments" />
+          <ScalarProperty Name="cEmailIDs" ColumnName="cEmailIDs" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLeaveApplicationUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocLeaveApplicationUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveBalanceAlter" FunctionName="WebAttn_apModel.Store.sprocLeaveBalanceAlter" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveBalanceExcel" FunctionName="WebAttn_apModel.Store.sprocLeaveBalanceExcel" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveBalanceView" FunctionName="WebAttn_apModel.Store.sprocLeaveBalanceView">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLeaveBalanceView_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="PL_OP" ColumnName="PL_OP" />
+          <ScalarProperty Name="PL_CR" ColumnName="PL_CR" />
+          <ScalarProperty Name="PL_AL" ColumnName="PL_AL" />
+          <ScalarProperty Name="PL_CB" ColumnName="PL_CB" />
+          <ScalarProperty Name="ACC_OP" ColumnName="ACC_OP" />
+          <ScalarProperty Name="ACC_AL" ColumnName="ACC_AL" />
+          <ScalarProperty Name="ACC_CB" ColumnName="ACC_CB" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="cRemarks" ColumnName="cRemarks" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cCardNumber1" ColumnName="cCardNumber1" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="cPresentAddress" ColumnName="cPresentAddress" />
+          <ScalarProperty Name="cPermanantAddress" ColumnName="cPermanantAddress" />
+          <ScalarProperty Name="cMobileNo" ColumnName="cMobileNo" />
+          <ScalarProperty Name="cContactPerson" ColumnName="cContactPerson" />
+          <ScalarProperty Name="cContactMobileNo" ColumnName="cContactMobileNo" />
+          <ScalarProperty Name="cFatherspouceName" ColumnName="cFatherspouceName" />
+          <ScalarProperty Name="cNationality" ColumnName="cNationality" />
+          <ScalarProperty Name="dtDOB" ColumnName="dtDOB" />
+          <ScalarProperty Name="dtDOJ" ColumnName="dtDOJ" />
+          <ScalarProperty Name="dtDOL" ColumnName="dtDOL" />
+          <ScalarProperty Name="cSex" ColumnName="cSex" />
+          <ScalarProperty Name="cJobStatus" ColumnName="cJobStatus" />
+          <ScalarProperty Name="cShift1" ColumnName="cShift1" />
+          <ScalarProperty Name="cShift2" ColumnName="cShift2" />
+          <ScalarProperty Name="cShift3" ColumnName="cShift3" />
+          <ScalarProperty Name="nDays" ColumnName="nDays" />
+          <ScalarProperty Name="dtBaseDate" ColumnName="dtBaseDate" />
+          <ScalarProperty Name="cFlexible" ColumnName="cFlexible" />
+          <ScalarProperty Name="cLate" ColumnName="cLate" />
+          <ScalarProperty Name="cEarly" ColumnName="cEarly" />
+          <ScalarProperty Name="cOT" ColumnName="cOT" />
+          <ScalarProperty Name="cLateWOPH" ColumnName="cLateWOPH" />
+          <ScalarProperty Name="cEarlyWOPH" ColumnName="cEarlyWOPH" />
+          <ScalarProperty Name="cOTWOPH" ColumnName="cOTWOPH" />
+          <ScalarProperty Name="cCompCode" ColumnName="cCompCode" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cDepartmentCode" ColumnName="cDepartmentCode" />
+          <ScalarProperty Name="cCategoryCode" ColumnName="cCategoryCode" />
+          <ScalarProperty Name="cDivisionCode" ColumnName="cDivisionCode" />
+          <ScalarProperty Name="cDesignationCode" ColumnName="cDesignationCode" />
+          <ScalarProperty Name="cOdd" ColumnName="cOdd" />
+          <ScalarProperty Name="cMin" ColumnName="cMin" />
+          <ScalarProperty Name="cMax" ColumnName="cMax" />
+          <ScalarProperty Name="nMaxTime" ColumnName="nMaxTime" />
+          <ScalarProperty Name="cFullDay" ColumnName="cFullDay" />
+          <ScalarProperty Name="nTimeOut" ColumnName="nTimeOut" />
+          <ScalarProperty Name="nOffDay1" ColumnName="nOffDay1" />
+          <ScalarProperty Name="nOffDay2" ColumnName="nOffDay2" />
+          <ScalarProperty Name="cEmail" ColumnName="cEmail" />
+          <ScalarProperty Name="cHod" ColumnName="cHod" />
+          <ScalarProperty Name="cHod1" ColumnName="cHod1" />
+          <ScalarProperty Name="dtWO" ColumnName="dtWO" />
+          <ScalarProperty Name="nOffDay3" ColumnName="nOffDay3" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLeaveEncash" FunctionName="WebAttn_apModel.Store.sprocLeaveEncash" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveProcess" FunctionName="WebAttn_apModel.Store.sprocLeaveProcess" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveProcess_backup" FunctionName="WebAttn_apModel.Store.sprocLeaveProcess_backup" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveTypeDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocLeaveTypeDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveTypeInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocLeaveTypeInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLeaveTypeSelectList" FunctionName="WebAttn_apModel.Store.sprocLeaveTypeSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLeaveTypeSelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cLeaveTypecode" ColumnName="cLeaveTypecode" />
+          <ScalarProperty Name="cLeaveTypedesc" ColumnName="cLeaveTypedesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="cpaid" ColumnName="cpaid" />
+          <ScalarProperty Name="cCarry" ColumnName="cCarry" />
+          <ScalarProperty Name="ccredit" ColumnName="ccredit" />
+          <ScalarProperty Name="cCategory" ColumnName="cCategory" />
+          <ScalarProperty Name="nOrder" ColumnName="nOrder" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLeaveTypeSelectListNew" FunctionName="WebAttn_apModel.Store.sprocLeaveTypeSelectListNew">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLeaveTypeSelectListNew_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cLeaveTypecode" ColumnName="cLeaveTypecode" />
+          <ScalarProperty Name="cLeaveTypedesc" ColumnName="cLeaveTypedesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="cpaid" ColumnName="cpaid" />
+          <ScalarProperty Name="cCarry" ColumnName="cCarry" />
+          <ScalarProperty Name="ccredit" ColumnName="ccredit" />
+          <ScalarProperty Name="cCategory" ColumnName="cCategory" />
+          <ScalarProperty Name="nOrder" ColumnName="nOrder" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLeaveTypeSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocLeaveTypeSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLeaveTypeSelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cLeaveTypecode" ColumnName="cLeaveTypecode" />
+          <ScalarProperty Name="cLeaveTypedesc" ColumnName="cLeaveTypedesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="cpaid" ColumnName="cpaid" />
+          <ScalarProperty Name="cCarry" ColumnName="cCarry" />
+          <ScalarProperty Name="ccredit" ColumnName="ccredit" />
+          <ScalarProperty Name="cCategory" ColumnName="cCategory" />
+          <ScalarProperty Name="nOrder" ColumnName="nOrder" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLocationDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocLocationDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLocationInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocLocationInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLocationSelectList" FunctionName="WebAttn_apModel.Store.sprocLocationSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLocationSelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cLocationcode" ColumnName="cLocationcode" />
+          <ScalarProperty Name="cLocationdesc" ColumnName="cLocationdesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLocationSelectReportList" FunctionName="WebAttn_apModel.Store.sprocLocationSelectReportList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLocationSelectReportList_Result">
+          <ScalarProperty Name="cLocationcode" ColumnName="cLocationcode" />
+          <ScalarProperty Name="cLocationDesc" ColumnName="cLocationDesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLocationSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocLocationSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLocationSelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cLocationcode" ColumnName="cLocationcode" />
+          <ScalarProperty Name="cLocationdesc" ColumnName="cLocationdesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLockMasterDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocLockMasterDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLockMasterInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocLockMasterInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocLockMasterSelectList" FunctionName="WebAttn_apModel.Store.sprocLockMasterSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLockMasterSelectList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cYYMM" ColumnName="cYYMM" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="cLock" ColumnName="cLock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLockMasterSelectSingleidItem" FunctionName="WebAttn_apModel.Store.sprocLockMasterSelectSingleidItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLockMasterSelectSingleidItem_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cYYMM" ColumnName="cYYMM" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="cLock" ColumnName="cLock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocLockMasterSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocLockMasterSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocLockMasterSelectSingleItem_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cYYMM" ColumnName="cYYMM" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="cLock" ColumnName="cLock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocMainProcess" FunctionName="WebAttn_apModel.Store.sprocMainProcess" />
+    <FunctionImportMapping FunctionImportName="sprocMainProcess_bk" FunctionName="WebAttn_apModel.Store.sprocMainProcess_bk" />
+    <FunctionImportMapping FunctionImportName="sprocManualPunchesDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocManualPunchesDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocManualPunchesSelectEmployeeList" FunctionName="WebAttn_apModel.Store.sprocManualPunchesSelectEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocManualPunchesSelectEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocManualPunchesSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocManualPunchesSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocManualPunchesSelectSingleItem_Result">
+          <ScalarProperty Name="cCardnumber" ColumnName="cCardnumber" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="nTmmn" ColumnName="nTmmn" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocManualPunchesUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocManualPunchesUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocManualScheduleSelectEmployeeList" FunctionName="WebAttn_apModel.Store.sprocManualScheduleSelectEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocManualScheduleSelectEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocManualScheduleSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocManualScheduleSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocManualScheduleSelectSingleItem_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="cShiftcode" ColumnName="cShiftcode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+          <ScalarProperty Name="cTimein" ColumnName="cTimein" />
+          <ScalarProperty Name="cTimeout" ColumnName="cTimeout" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocOHolidayDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocOHolidayDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocOHolidayInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocOHolidayInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocOHolidaySelectList" FunctionName="WebAttn_apModel.Store.sprocOHolidaySelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocOHolidaySelectList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cHolidaycode" ColumnName="cHolidaycode" />
+          <ScalarProperty Name="cHolidaydesc" ColumnName="cHolidaydesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="cStatuscode" ColumnName="cStatuscode" />
+          <ScalarProperty Name="cLocationcode" ColumnName="cLocationcode" />
+          <ScalarProperty Name="cBUcode" ColumnName="cBUcode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocOHolidaySelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocOHolidaySelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocOHolidaySelectSingleItem_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cHolidaycode" ColumnName="cHolidaycode" />
+          <ScalarProperty Name="cHolidaydesc" ColumnName="cHolidaydesc" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="cStatuscode" ColumnName="cStatuscode" />
+          <ScalarProperty Name="cLocationcode" ColumnName="cLocationcode" />
+          <ScalarProperty Name="cBUcode" ColumnName="cBUcode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocOnsiteDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocOnsiteDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocOnsiteSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocOnsiteSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocOnsiteSelectSingleItem_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="cLeaveTypeCode" ColumnName="cLeaveTypeCode" />
+          <ScalarProperty Name="cReason" ColumnName="cReason" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocOnsiteUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocOnsiteUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="SprocOptionalHoliday" FunctionName="WebAttn_apModel.Store.SprocOptionalHoliday" />
+    <FunctionImportMapping FunctionImportName="sprocOptionalHolidayApproveSingleItem" FunctionName="WebAttn_apModel.Store.sprocOptionalHolidayApproveSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocOptionalHolidayDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocOptionalHolidayDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocOptionalHolidaySaveSingleItem" FunctionName="WebAttn_apModel.Store.sprocOptionalHolidaySaveSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocOptionalHolidaySelectEmployeeList" FunctionName="WebAttn_apModel.Store.sprocOptionalHolidaySelectEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocOptionalHolidaySelectEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="noffday1" ColumnName="noffday1" />
+          <ScalarProperty Name="noffday2" ColumnName="noffday2" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocOptionalHolidaySelectHodlist" FunctionName="WebAttn_apModel.Store.sprocOptionalHolidaySelectHodlist">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocOptionalHolidaySelectHodlist_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="dtChangeDate" ColumnName="dtChangeDate" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocOptionalHolidaySelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocOptionalHolidaySelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocOptionalHolidaySelectSingleItem_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="dtChangeDate" ColumnName="dtChangeDate" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocOptionalHolidayUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocOptionalHolidayUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocOvertimeSelectEmployeeList" FunctionName="WebAttn_apModel.Store.sprocOvertimeSelectEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocOvertimeSelectEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocOvertimeSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocOvertimeSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocOvertimeSelectSingleItem_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="cOvertime" ColumnName="cOvertime" />
+          <ScalarProperty Name="cOvertimeAuth" ColumnName="cOvertimeAuth" />
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocOvertimeUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocOvertimeUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocProcessEmployeeList" FunctionName="WebAttn_apModel.Store.sprocProcessEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocProcessEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocScheduleMaster" FunctionName="WebAttn_apModel.Store.sprocScheduleMaster" />
+    <FunctionImportMapping FunctionImportName="sprocScheduleMasterSaveSingleItem" FunctionName="WebAttn_apModel.Store.sprocScheduleMasterSaveSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocScheduleMastertest" FunctionName="WebAttn_apModel.Store.sprocScheduleMastertest" />
+    <FunctionImportMapping FunctionImportName="sprocScheduleSelectEmployeeList" FunctionName="WebAttn_apModel.Store.sprocScheduleSelectEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocScheduleSelectEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocScheduleSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocScheduleSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocScheduleSelectSingleItem_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtdate" ColumnName="dtdate" />
+          <ScalarProperty Name="cShiftcode" ColumnName="cShiftcode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+          <ScalarProperty Name="cTimein" ColumnName="cTimein" />
+          <ScalarProperty Name="cTimeout" ColumnName="cTimeout" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocScheduleUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocScheduleUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocSetMasterDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocSetMasterDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocSetMasterInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocSetMasterInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocSetMasterSelectList" FunctionName="WebAttn_apModel.Store.sprocSetMasterSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocSetMasterSelectList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="cActive" ColumnName="cActive" />
+          <ScalarProperty Name="nFullDay" ColumnName="nFullDay" />
+          <ScalarProperty Name="nHalfDay" ColumnName="nHalfDay" />
+          <ScalarProperty Name="nAbsent" ColumnName="nAbsent" />
+          <ScalarProperty Name="cWeekoffCode" ColumnName="cWeekoffCode" />
+          <ScalarProperty Name="nLeaveEligible" ColumnName="nLeaveEligible" />
+          <ScalarProperty Name="nLeaveGrace" ColumnName="nLeaveGrace" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocSetMasterSelectSingleidItem" FunctionName="WebAttn_apModel.Store.sprocSetMasterSelectSingleidItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocSetMasterSelectSingleidItem_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="cActive" ColumnName="cActive" />
+          <ScalarProperty Name="nFullDay" ColumnName="nFullDay" />
+          <ScalarProperty Name="nHalfDay" ColumnName="nHalfDay" />
+          <ScalarProperty Name="nAbsent" ColumnName="nAbsent" />
+          <ScalarProperty Name="cWeekoffCode" ColumnName="cWeekoffCode" />
+          <ScalarProperty Name="nLeaveEligible" ColumnName="nLeaveEligible" />
+          <ScalarProperty Name="nLeaveGrace" ColumnName="nLeaveGrace" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocSetMasterSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocSetMasterSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocSetMasterSelectSingleItem_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="dtFrom" ColumnName="dtFrom" />
+          <ScalarProperty Name="dtTo" ColumnName="dtTo" />
+          <ScalarProperty Name="cActive" ColumnName="cActive" />
+          <ScalarProperty Name="nFullDay" ColumnName="nFullDay" />
+          <ScalarProperty Name="nHalfDay" ColumnName="nHalfDay" />
+          <ScalarProperty Name="nAbsent" ColumnName="nAbsent" />
+          <ScalarProperty Name="cWeekoffCode" ColumnName="cWeekoffCode" />
+          <ScalarProperty Name="nLeaveEligible" ColumnName="nLeaveEligible" />
+          <ScalarProperty Name="nLeaveGrace" ColumnName="nLeaveGrace" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocShiftDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocShiftDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocShiftInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocShiftInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocShiftSelectItemLocation" FunctionName="WebAttn_apModel.Store.sprocShiftSelectItemLocation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocShiftSelectItemLocation_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cShiftDesc" ColumnName="cShiftDesc" />
+          <ScalarProperty Name="cTotalHrs" ColumnName="cTotalHrs" />
+          <ScalarProperty Name="cTotalSwipe" ColumnName="cTotalSwipe" />
+          <ScalarProperty Name="cTotalFixed" ColumnName="cTotalFixed" />
+          <ScalarProperty Name="cTotalFixedValue" ColumnName="cTotalFixedValue" />
+          <ScalarProperty Name="cTotalLHrs" ColumnName="cTotalLHrs" />
+          <ScalarProperty Name="cTotalLSwipe" ColumnName="cTotalLSwipe" />
+          <ScalarProperty Name="cTotalLFixed" ColumnName="cTotalLFixed" />
+          <ScalarProperty Name="cTotalLFixedValue" ColumnName="cTotalLFixedValue" />
+          <ScalarProperty Name="nShiftStart" ColumnName="nShiftStart" />
+          <ScalarProperty Name="nShiftEnd" ColumnName="nShiftEnd" />
+          <ScalarProperty Name="nLunchStart" ColumnName="nLunchStart" />
+          <ScalarProperty Name="nLunchEnd" ColumnName="nLunchEnd" />
+          <ScalarProperty Name="nGraceIn" ColumnName="nGraceIn" />
+          <ScalarProperty Name="nGraceOut" ColumnName="nGraceOut" />
+          <ScalarProperty Name="nBefore" ColumnName="nBefore" />
+          <ScalarProperty Name="nAfter" ColumnName="nAfter" />
+          <ScalarProperty Name="nOTBefore" ColumnName="nOTBefore" />
+          <ScalarProperty Name="nOTAfter" ColumnName="nOTAfter" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocShiftSelectList" FunctionName="WebAttn_apModel.Store.sprocShiftSelectList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocShiftSelectList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cShiftDesc" ColumnName="cShiftDesc" />
+          <ScalarProperty Name="cTotalHrs" ColumnName="cTotalHrs" />
+          <ScalarProperty Name="cTotalSwipe" ColumnName="cTotalSwipe" />
+          <ScalarProperty Name="cTotalFixed" ColumnName="cTotalFixed" />
+          <ScalarProperty Name="cTotalFixedValue" ColumnName="cTotalFixedValue" />
+          <ScalarProperty Name="cTotalLHrs" ColumnName="cTotalLHrs" />
+          <ScalarProperty Name="cTotalLSwipe" ColumnName="cTotalLSwipe" />
+          <ScalarProperty Name="cTotalLFixed" ColumnName="cTotalLFixed" />
+          <ScalarProperty Name="cTotalLFixedValue" ColumnName="cTotalLFixedValue" />
+          <ScalarProperty Name="nShiftStart" ColumnName="nShiftStart" />
+          <ScalarProperty Name="nShiftEnd" ColumnName="nShiftEnd" />
+          <ScalarProperty Name="nLunchStart" ColumnName="nLunchStart" />
+          <ScalarProperty Name="nLunchEnd" ColumnName="nLunchEnd" />
+          <ScalarProperty Name="nGraceIn" ColumnName="nGraceIn" />
+          <ScalarProperty Name="nGraceOut" ColumnName="nGraceOut" />
+          <ScalarProperty Name="nBefore" ColumnName="nBefore" />
+          <ScalarProperty Name="nAfter" ColumnName="nAfter" />
+          <ScalarProperty Name="nOTBefore" ColumnName="nOTBefore" />
+          <ScalarProperty Name="nOTAfter" ColumnName="nOTAfter" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocShiftSelectSingleidItem" FunctionName="WebAttn_apModel.Store.sprocShiftSelectSingleidItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocShiftSelectSingleidItem_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cShiftDesc" ColumnName="cShiftDesc" />
+          <ScalarProperty Name="cTotalHrs" ColumnName="cTotalHrs" />
+          <ScalarProperty Name="cTotalSwipe" ColumnName="cTotalSwipe" />
+          <ScalarProperty Name="cTotalFixed" ColumnName="cTotalFixed" />
+          <ScalarProperty Name="cTotalFixedValue" ColumnName="cTotalFixedValue" />
+          <ScalarProperty Name="cTotalLHrs" ColumnName="cTotalLHrs" />
+          <ScalarProperty Name="cTotalLSwipe" ColumnName="cTotalLSwipe" />
+          <ScalarProperty Name="cTotalLFixed" ColumnName="cTotalLFixed" />
+          <ScalarProperty Name="cTotalLFixedValue" ColumnName="cTotalLFixedValue" />
+          <ScalarProperty Name="nShiftStart" ColumnName="nShiftStart" />
+          <ScalarProperty Name="nShiftEnd" ColumnName="nShiftEnd" />
+          <ScalarProperty Name="nLunchStart" ColumnName="nLunchStart" />
+          <ScalarProperty Name="nLunchEnd" ColumnName="nLunchEnd" />
+          <ScalarProperty Name="nGraceIn" ColumnName="nGraceIn" />
+          <ScalarProperty Name="nGraceOut" ColumnName="nGraceOut" />
+          <ScalarProperty Name="nBefore" ColumnName="nBefore" />
+          <ScalarProperty Name="nAfter" ColumnName="nAfter" />
+          <ScalarProperty Name="nOTBefore" ColumnName="nOTBefore" />
+          <ScalarProperty Name="nOTAfter" ColumnName="nOTAfter" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocShiftSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocShiftSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocShiftSelectSingleItem_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="cShiftCode" ColumnName="cShiftCode" />
+          <ScalarProperty Name="cShiftDesc" ColumnName="cShiftDesc" />
+          <ScalarProperty Name="cTotalHrs" ColumnName="cTotalHrs" />
+          <ScalarProperty Name="cTotalSwipe" ColumnName="cTotalSwipe" />
+          <ScalarProperty Name="cTotalFixed" ColumnName="cTotalFixed" />
+          <ScalarProperty Name="cTotalFixedValue" ColumnName="cTotalFixedValue" />
+          <ScalarProperty Name="cTotalLHrs" ColumnName="cTotalLHrs" />
+          <ScalarProperty Name="cTotalLSwipe" ColumnName="cTotalLSwipe" />
+          <ScalarProperty Name="cTotalLFixed" ColumnName="cTotalLFixed" />
+          <ScalarProperty Name="cTotalLFixedValue" ColumnName="cTotalLFixedValue" />
+          <ScalarProperty Name="nShiftStart" ColumnName="nShiftStart" />
+          <ScalarProperty Name="nShiftEnd" ColumnName="nShiftEnd" />
+          <ScalarProperty Name="nLunchStart" ColumnName="nLunchStart" />
+          <ScalarProperty Name="nLunchEnd" ColumnName="nLunchEnd" />
+          <ScalarProperty Name="nGraceIn" ColumnName="nGraceIn" />
+          <ScalarProperty Name="nGraceOut" ColumnName="nGraceOut" />
+          <ScalarProperty Name="nBefore" ColumnName="nBefore" />
+          <ScalarProperty Name="nAfter" ColumnName="nAfter" />
+          <ScalarProperty Name="nOTBefore" ColumnName="nOTBefore" />
+          <ScalarProperty Name="nOTAfter" ColumnName="nOTAfter" />
+          <ScalarProperty Name="cLocationCode" ColumnName="cLocationCode" />
+          <ScalarProperty Name="cPrimary" ColumnName="cPrimary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocUserInsertUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocUserInsertUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocWorkfromHomeApproveSingleItem" FunctionName="WebAttn_apModel.Store.sprocWorkfromHomeApproveSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocWorkfromHomeDeleteSingleItem" FunctionName="WebAttn_apModel.Store.sprocWorkfromHomeDeleteSingleItem" />
+    <FunctionImportMapping FunctionImportName="sprocWorkfromHomeSelectEmployeeList" FunctionName="WebAttn_apModel.Store.sprocWorkfromHomeSelectEmployeeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocWorkfromHomeSelectEmployeeList_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="cEmployeeCode" ColumnName="cEmployeeCode" />
+          <ScalarProperty Name="cEmployeeName" ColumnName="cEmployeeName" />
+          <ScalarProperty Name="ccodename" ColumnName="ccodename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocWorkfromHomeSelectHodlist" FunctionName="WebAttn_apModel.Store.sprocWorkfromHomeSelectHodlist">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocWorkfromHomeSelectHodlist_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtFromDate" ColumnName="dtFromDate" />
+          <ScalarProperty Name="dtToDate" ColumnName="dtToDate" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocWorkfromHomeSelectSingleItem" FunctionName="WebAttn_apModel.Store.sprocWorkfromHomeSelectSingleItem">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="WebAttn_apModel.sprocWorkfromHomeSelectSingleItem_Result">
+          <ScalarProperty Name="cCardNumber" ColumnName="cCardNumber" />
+          <ScalarProperty Name="dtfromdate" ColumnName="dtfromdate" />
+          <ScalarProperty Name="dttodate" ColumnName="dttodate" />
+          <ScalarProperty Name="cemployeename" ColumnName="cemployeename" />
+          <ScalarProperty Name="cemployeecode" ColumnName="cemployeecode" />
+          <ScalarProperty Name="cStatus" ColumnName="cStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprocWorkfromHomeUpdateSingleItem" FunctionName="WebAttn_apModel.Store.sprocWorkfromHomeUpdateSingleItem" />
+    <FunctionImportMapping FunctionImportName="test" FunctionName="WebAttn_apModel.Store.test" />
+    <FunctionImportMapping FunctionImportName="testdate" FunctionName="WebAttn_apModel.Store.testdate" />
+    <FunctionImportMapping FunctionImportName="tmpLeaveBalanceTable" FunctionName="WebAttn_apModel.Store.tmpLeaveBalanceTable" />
+    <FunctionImportMapping FunctionImportName="tmpLeaveBalanceUserTable" FunctionName="WebAttn_apModel.Store.tmpLeaveBalanceUserTable" />
+    <FunctionImportMapping FunctionImportName="UPDATEEMPONSITE" FunctionName="WebAttn_apModel.Store.UPDATEEMPONSITE" />
+    <FunctionImportMapping FunctionImportName="WokHomeReportCategory" FunctionName="WebAttn_apModel.Store.WokHomeReportCategory" />
+    <FunctionImportMapping FunctionImportName="WorkHomeReport" FunctionName="WebAttn_apModel.Store.WorkHomeReport" />
+    <FunctionImportMapping FunctionImportName="WorkHomeReportDepartment" FunctionName="WebAttn_apModel.Store.WorkHomeReportDepartment" />
+    <FunctionImportMapping FunctionImportName="WorkHomeReportDesignation" FunctionName="WebAttn_apModel.Store.WorkHomeReportDesignation" />
+    <FunctionImportMapping FunctionImportName="WorkHomeReportDivision" FunctionName="WebAttn_apModel.Store.WorkHomeReportDivision" />
+    <FunctionImportMapping FunctionImportName="WorkHomeReportLocation" FunctionName="WebAttn_apModel.Store.WorkHomeReportLocation" />
+  </EntityContainerMapping>
+</Mapping>
