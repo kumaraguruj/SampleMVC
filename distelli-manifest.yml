@@ -85,8 +85,7 @@ PostStart:
     - publicip=$(curl -s ident.me)
 
     - echo "Starting Ghost Inspector tests"
-    - results=$(curl -s "https://api.ghostinspector.com/v1/tests/5b27030efbf07203e3f2a46f/execute/?apiKey=aacb5f9ae714bcf0f434722bd33f5169e4b6c8da&startUrl=http://$publicip:$PORT/")
-
+    -  results=$(curl -s "https://api.ghostinspector.com/v1/tests/5b27030efbf07203e3f2a46f/execute/?apiKey=aacb5f9ae714bcf0f434722bd33f5169e4b6c8da&startUrl=http://$publicip:$PORT/")
     - if [[ $(jq '.code' <<< $results) != "\"SUCCESS\"" ]]; then
     -   echo "Tests failed to run!"
     -   echo ""
@@ -110,10 +109,10 @@ PostStart:
     -   echo "Ghost Inspector Integration tests PASSED SUCCESSFULLY!"
     - else
     -   echo "Ghost Inspector Integration tests FAILED!!!"
-    - exit
+    -   exit 1
     - fi
-	- echo "Done PostStart123"
-
+	- echo "---"
+    - echo "Done PostStart"
   Start:
     - echo "Begin Start"
     - echo "Start IIS Site"
