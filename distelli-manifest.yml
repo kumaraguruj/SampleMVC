@@ -110,7 +110,7 @@ PostStart:
     -   echo "Ghost Inspector Integration tests PASSED SUCCESSFULLY!"
     - else
     -   echo "Ghost Inspector Integration tests FAILED!!!"
-    -   exit 1
+    - exit
     - fi
 	- echo "Done PostStart123"
 
