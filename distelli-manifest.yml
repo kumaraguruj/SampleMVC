@@ -108,11 +108,11 @@ PostStart:
     - if [ "$passing" -gt 0 ]; then
     -   echo "Ghost Inspector Integration tests PASSED SUCCESSFULLY!"
     - else
-    -   echo "Ghost Inspector Integration tests FAILED!!!"
-    -   exit 1
-    - fi
+    - echo "Ghost Inspector Integration tests FAILED!!!"
+    - exit 1
+	- fi
 	- echo "---"
-    - echo "Done PostStart"
+    - echo "Done PostStart 123"
   Start:
     - echo "Begin Start"
     - echo "Start IIS Site"
