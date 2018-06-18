@@ -81,7 +81,7 @@ guru4ui/SampleMVC:
     - echo "---"
     - echo "Done PostInstall"
 PostStart:
-    - echo "Begin PostStart"
+    - echo "PostStart"
     - publicip=$(curl -s ident.me)
 
     - echo "Starting Ghost Inspector tests"
@@ -112,7 +112,8 @@ PostStart:
     -   echo "Ghost Inspector Integration tests FAILED!!!"
     -   exit 1
     - fi
-	- echo "Done PostStart"
+	- echo "Done PostStart123"
+
   Start:
     - echo "Begin Start"
     - echo "Start IIS Site"

@@ -19,13 +19,4 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://pacchi.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = WebApplication3\\WebApplication3.csproj
-		SccProjectName1 = WebApplication3
-		SccLocalPath1 = WebApplication3
-	EndGlobalSection
 EndGlobal
