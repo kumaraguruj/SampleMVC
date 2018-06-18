@@ -80,6 +80,39 @@ guru4ui/SampleMVC:
     - icacls "%APPDIR%" /grant IUSR:(OI)(CI)F /t
     - echo "---"
     - echo "Done PostInstall"
+PostStart:
+    - echo "Begin PostStart"
+    - publicip=$(curl -s ident.me)
+
+    - echo "Starting Ghost Inspector tests"
+    - results=$(curl -s "https://api.ghostinspector.com/v1/tests/5b27030efbf07203e3f2a46f/execute/?apiKey=aacb5f9ae714bcf0f434722bd33f5169e4b6c8da&startUrl=http://$publicip:$PORT/")
+
+    - if [[ $(jq '.code' <<< $results) != "\"SUCCESS\"" ]]; then
+    -   echo "Tests failed to run!"
+    -   echo ""
+    -   echo "$results"
+    -   exit 1
+    - fi
+    - IFS=$'\n'
+    - lines=$(jq '.' <<< $results)
+    - passing=1
+    - counter=0
+    - for line in $lines; do
+    -   printf "$counter "
+    -   'if [[ "$line" =~ "\"passing\": false," || "$line" =~ "\"passing\": null," ]]; then'
+    -     passing=0
+    -     printf "***> "
+    -   fi
+    -   echo "$line"
+    -   let counter=counter+1
+    - done
+    - if [ "$passing" -gt 0 ]; then
+    -   echo "Ghost Inspector Integration tests PASSED SUCCESSFULLY!"
+    - else
+    -   echo "Ghost Inspector Integration tests FAILED!!!"
+    -   exit 1
+    - fi
+	- echo "Done PostStart"
   Start:
     - echo "Begin Start"
     - echo "Start IIS Site"
